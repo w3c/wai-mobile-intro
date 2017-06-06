@@ -1,0 +1,388 @@
+<!doctype html>
+<html class="no-js no-svg" lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>
+  Captions and descriptions decision trees
+  
+    
+       &bull; Accessible Media
+    
+  
+  &bull; WAI Web Accessibility Tutorials
+  </title>
+  <link rel="canonical" href="https://www.w3.org/WAI/tutorials/accessible-media/decision-tree/" />
+  <meta name="viewport" content="width=device-width">
+  <link href="../../stylesheets/wai-act-51575202.css" rel="stylesheet" type="text/css" />
+  <script src="../../javascripts/modernizr-a1c597b5.js" type="text/javascript"></script>
+  <link rel="mask-icon" href="../../img/w3cwai-maskicon-cf2cdf03.svg" color="#003366">
+</head>
+<body class="texts">
+  <header role="banner">
+    <div class="w3c-wai-header">
+      <a href="http://w3.org/"><img alt="W3C" width="90" src="../../img/w3c-bde9a11f.svg" /></a>
+      <a href="http://w3.org/WAI/" class="wai"><img alt="Web Accessibility Initiative" src="../../img/wai-590850fc.svg" /></a>
+    </div>
+    <div class="page-title">
+      <a class="" href="../../">Web Accessibility Developer Intros <span class="subheading">Guidance on how to create websites that meet WCAG</span></a>
+    </div>
+  </header>
+  <div class="with-side-menu">
+    <nav aria-label="Skip links" role="navigation">
+      <a href="#nav" class="btn btn-jump">Jump to the navigation</a>
+    </nav>
+<main role="main" class="content editors-draft">
+  <article role="article">
+    <header class="tutorial-heading">
+      <nav class="breadcrumb" aria-label="Breadcrumbs" role="navigation">
+        <p>
+          <span class="home"><a class="" href="../../"><span class="count"></span><span class="txt">Developer Intro home</span></a></span> <span class="icon icon-chevron-right"></span><span class="visuallyhidden">»</span>
+          <span class="other">
+            
+              <a class="" href="../"><span class="count"></span><span class="txt">Accessible Media</span></a> <span class="icon icon-chevron-right"></span><span class="visuallyhidden">»</span>
+            
+            
+            <span class="current-a"><span class="count"></span><span class="txt"><span class="visuallyhidden">Current: </span>Captions and descriptions decision trees</span></span>
+          </span>
+        </p>
+      </nav>
+      <h1>
+        Captions and descriptions decision trees
+      </h1>
+    </header>
+
+    
+    
+      <div class="status">
+        <p><strong>Status:</strong> This is not ready for detailed review. It is an in-progress, unapproved editor’s draft.</p>
+      </div>
+    
+
+
+    <div class="inner">
+
+      
+
+      
+
+
+      <h2 id="captions">Captions</h2>
+
+<ul class="decision-tree">
+  <li><strong>Does the media contain only audio and no video?</strong>
+    <ul>
+      <li class="yes"><strong>Yes:</strong>
+        <ul>
+          <li><strong>… and the audio contains dialog or narration.</strong>
+<em>Provide an alternative that presents equivalent information (e.g., captions or a transcript).  See <a href="https://www.w3.org/TR/UNDERSTANDING-WCAG20/media-equiv-av-only-alt.html">SC 1.2.1</a>.</em></li>
+          <li><strong>… and the audio does not contain dialog or narration but does contain other non-speech audio elements.</strong>
+<em>Provide an alternative that presents equivalent information (e.g., captions or a transcript that reflects the non-speech content, such as sound effects).  See <a href="https://www.w3.org/TR/UNDERSTANDING-WCAG20/media-equiv-av-only-alt.html">SC 1.2.1</a>.</em></li>
+          <li><strong>… and the media is an audio-only clip.</strong>
+  <em>Provide captions or a complete transcript. See <a href="../production-captions/">production options for captions</a> or <a href="../transcript/">transcript concepts and examples</a>.</em></li>
+          <li><strong>… and there is already text on the screen that accurately reflects the audio.</strong> <em>Do not provide additional captions.</em></li>
+        </ul>
+      </li>
+      <li class="no"><strong>No:</strong>
+        <ul>
+          <li>Continue.</li>
+        </ul>
+      </li>
+    </ul>
+  </li>
+  <li><strong>Does the media contain only video and no audio?</strong>
+    <ul>
+      <li class="yes"><strong>Yes:</strong>
+        <ul>
+          <li><strong>… and there is already informative text on the screen.</strong>
+<em>An alternative is not required.</em></li>
+          <li><strong>… and the audio does not contain dialog or narration but does contain other non-speech audio elements.</strong>
+<em>Provide an alternative that presents equivalent information (e.g., captions or a transcript that reflects the non-speech content, such as sound effects).  See <a href="https://www.w3.org/TR/UNDERSTANDING-WCAG20/media-equiv-av-only-alt.html">SC 1.2.1</a>.</em></li>
+          <li><strong>… and the media is an audio-only clip.</strong>
+  <em>Provide captions or a complete transcript. See <a href="../production-captions/">production options for captions</a> or <a href="../transcript/">transcript concepts and examples</a>.</em></li>
+          <li><strong>… and there is already text on the screen that accurately reflects the audio.</strong> <em>Do not provide additional captions.</em></li>
+        </ul>
+      </li>
+      <li class="no"><strong>No:</strong>
+        <ul>
+          <li>Continue.</li>
+        </ul>
+      </li>
+    </ul>
+  </li>
+  <li><strong>Does the media contain video with synchronized audio?</strong>
+    <ul>
+      <li class="yes"><strong>Yes:</strong>
+        <ul>
+          <li><strong>… and the audio contains dialog or narration.</strong>
+<em>Provide captions for all prerecorded audio content in synchronized media.  See <a href="https://www.w3.org/TR/UNDERSTANDING-WCAG20/media-equiv-captions.html">SC 1.2.2</a>.</em></li>
+          <li><strong>… and the audio does not contain dialog or narration but does contain other non-speech audio elements.</strong>
+<em>Provide a synchronized alternative that presents equivalent information (e.g., captions that reflect the non-speech content, such as sound effects). See <a href="https://www.w3.org/TR/UNDERSTANDING-WCAG20/media-equiv-captions.html">SC 1.2.2</a>.</em></li>
+          <li><strong>… and there is already text on the screen that accurately reflects the audio (including both speech and non-speech elements).</strong>
+  <em>An alternative is not required.</em></li>
+        </ul>
+      </li>
+      <li class="no"><strong>No:</strong>
+        <ul>
+          <li>Continue.</li>
+        </ul>
+      </li>
+    </ul>
+  </li>
+  <li><strong>See the previous two items.</strong></li>
+</ul>
+
+<h2 id="audio-descriptions">Audio descriptions</h2>
+
+<ul class="decision-tree">
+  <li><strong>Does the media contain visual elements but no audio?</strong>
+    <ul>
+      <li class="yes"><strong>Yes:</strong>
+        <ul>
+          <li><strong>… and the visual elements (e.g., moving or static images; text) are critical for understanding on-screen action.</strong>
+<em>Provide an alternative such as synchronized audio descriptions or a text-based alternative. See <a href="https://www.w3.org/TR/UNDERSTANDING-WCAG20/media-equiv-audio-desc.html">SC 1.2.3</a>.</em></li>
+        </ul>
+      </li>
+      <li class="no"><strong>No:</strong>
+        <ul>
+          <li>Continue.</li>
+        </ul>
+      </li>
+    </ul>
+  </li>
+  <li><strong>Does the media contain visual elements with synchronized audio?</strong>
+    <ul>
+      <li class="yes"><strong>Yes:</strong>
+        <ul>
+          <li><strong>… and the visual elements (e.g., moving or static images; text) are critical for understanding on-screen action.</strong>
+<em>Provide audio descriptions for all prerecorded video content in synchronized media. See <a href="https://www.w3.org/TR/UNDERSTANDING-WCAG20/media-equiv-audio-desc-only.html">SC 1.2.5</a>.</em></li>
+          <li><strong>… and the audio does not provide sufficient information about important visual elements.</strong>
+<em>Provide audio descriptions where necessary.  See <a href="https://www.w3.org/TR/UNDERSTANDING-WCAG20/media-equiv-audio-desc-only.html">SC 1.2.5</a>.</em></li>
+          <li><strong>… and pauses in the dialog or narration are available but insufficient to accommodate complete descriptions.</strong>
+<em>Provide extended descriptions. See <a href="https://www.w3.org/TR/UNDERSTANDING-WCAG20/media-equiv-extended-ad.html">SC 1.2.7</a>.</em></li>
+          <li><strong>… and no pauses are available.</strong>
+<em>Provide extended descriptions; see <a href="https://www.w3.org/TR/UNDERSTANDING-WCAG20/media-equiv-extended-ad.html">SC 1.2.7</a>.  Or provide a pre-description; see <a href="../production-audio-description/">production options for descriptions</a>.</em></li>
+        </ul>
+      </li>
+      <li class="no"><strong>No:</strong>
+        <ul>
+          <li>Continue.</li>
+        </ul>
+      </li>
+    </ul>
+  </li>
+  <li><strong>If there are no important visual elements in the media, descriptions are not necessary.</strong></li>
+</ul>
+
+
+
+      
+
+      <nav role="navigation" aria-label="Previous/Next" id="tools">
+  <ul>
+    
+      
+      
+        
+        
+        
+      
+        
+        
+        
+      
+        
+        
+        
+      
+        
+        
+        
+      
+        
+        
+        
+      
+        
+        
+        
+      
+        
+        
+          <li class="prev">
+            <span><a rel="prev" class="" href="../playing/"><span class="count"></span><span class="txt"><span class="dir">Previous:</span><span class="title">Playing media</span></span></a></span>
+          </li>
+        
+        
+      
+        
+        
+        
+      
+    
+  </ul>
+</nav>
+
+
+      <aside class="side-box github" role="complementary">
+  <h2 class="heading">We welcome your ideas</h2>
+  <p>Please send any ideas, suggestions, or comments to the <a href="mailto:wai-eo-editors@w3.org?subject=[Tutorial%20Feedback]">(publicly-archived) mailing list wai-eo-editors@w3.org</a>. You can also contribute to the <a href="https://github.com/w3c/wai-media-intro" rel="nofollow">code directly on Github</a>.</p>
+
+	<div class="editpage">
+  	<a class="btn" href="https://github.com/w3c/wai-media-intro/blob/master/source/accessible-media/decision-tree.html.erb.md">Fork &amp; edit this page on Github</a>
+	</div>
+
+</aside>
+
+
+    </div>
+  </article>
+</main>
+<div class="navigation">
+  <nav role="navigation" aria-label="Main" id="nav">
+    <h2 class="list-heading" id="list-heading-tutorials">
+      
+          Accessible Media Tutorial
+      
+    </h2>
+    <ul aria-labelledby="list-heading-tutorials">
+      
+        
+      
+      
+        
+          <li class="intro"><a class="" href="../"><span class="count"></span><span class="txt">Concepts</span></a></li>
+        
+        
+          
+            <li>
+              <a class="" href="../production-captions/"><span class="count"></span><span class="txt">Captions</span></a>
+              
+            </li>
+          
+        
+          
+            <li>
+              <a class="" href="../formats/"><span class="count"></span><span class="txt">Caption formats</span></a>
+              
+            </li>
+          
+        
+          
+            <li>
+              <a class="" href="../automatically-generated-captions/"><span class="count"></span><span class="txt">Automatic Captions</span></a>
+              
+            </li>
+          
+        
+          
+            <li>
+              <a class="" href="../subtitles/"><span class="count"></span><span class="txt">Subtitles</span></a>
+              
+            </li>
+          
+        
+          
+            <li>
+              <a class="" href="../transcript/"><span class="count"></span><span class="txt">Transcripts</span></a>
+              
+            </li>
+          
+        
+          
+            <li>
+              <a class="" href="../production-audio-description/"><span class="count"></span><span class="txt">Audio descriptions</span></a>
+              
+            </li>
+          
+        
+          
+            <li>
+              <a class="" href="../playing/"><span class="count"></span><span class="txt">Playing media</span></a>
+              
+            </li>
+          
+        
+          
+            <li>
+              <span class="current-a"><span class="count"></span><span class="txt"><span class="visuallyhidden">Current: </span>Decision Trees</span></span>
+              
+            </li>
+          
+        
+      
+    </ul>
+    <h2 class="list-heading" id="list-heading-topics">
+  All Developer Intros
+</h2>
+<ul class="topics" aria-labelledby="list-heading-topics">
+  <li><span class="current-a"><span class="count"></span><span class="txt"><span class="visuallyhidden">Current: </span>Accessible Media <span class="status">editors-draft</span></span></span></li>
+</ul>
+
+  </nav>
+</div>
+  </div>
+	<footer id="footer" role="contentinfo" aria-labelledby="wai_footerheading">
+    <div>
+		<h2 id="wai_footerheading">Document Information</h2>
+    <p><strong>Feedback: We welcome ideas for improvements, bug reports, and comments</strong> via <a href="https://github.com/w3c/wai-tutorials">GitHub</a> or e-mail to <a href="mailto:wai-eo-editors@w3.org">wai-eo-editors@w3.org</a> (a publicly archived list) or <a href="mailto:wai@w3.org">wai@w3.org</a> (a WAI staff-only list).</p>
+		<ul>
+			<li><strong>Status:</strong>
+				
+	        [EDITOR’S DRAFT] updated
+	      
+	      26 May 2017
+	      
+			</li>
+      <li>
+  Editors:
+  <ul class="inline">
+    <li>Geoff Freed</li><li>Judy Brewer</li>
+  </ul>
+
+  Contributors:
+  <ul class="inline">
+    <li>The Education and Outreach Working Group (<a href="https://www.w3.org/WAI/EO/">EOWG</a>)</li>
+  </ul>
+</li>
+
+<li>
+  Developed with support from the <a href="https://www.w3.org/WAI/WCAGTA/">U.S. Access Board, WCAG TA Project</a>
+</li>
+
+      <li>[<a class="" href="../../attributions/"><span class="count"></span><span class="txt">Attributions</span></a>]  [<a class="" href="../../changelog/"><span class="count"></span><span class="txt">Changelog</span></a>]</li>
+    </ul>
+    <p>
+    	[<a href="https://www.w3.org/WAI/sitemap.html">WAI Site Map</a>]
+    	[<a href="https://www.w3.org/WAI/sitehelp.html">Help with WAI Website</a>]
+    	[<a href="https://www.w3.org/WAI/search.php">Search</a>]
+    	[<a href="https://www.w3.org/WAI/contacts">Contacting WAI</a>]
+		</p>
+    <div class="copyright">
+        <p>
+	        Copyright &#xA9; 2014 W3C <sup>&#xAE;</sup> (<a href="http://www.csail.mit.edu/"><abbr title="Massachusetts Institute of Technology">MIT</abbr></a>, <a href="http://www.ercim.eu/"><abbr title="European Research Consortium for Informatics and Mathematics">ERCIM</abbr></a>, <a href="http://www.keio.ac.jp/">Keio</a>, <a href="http://ev.buaa.edu.cn/">Beihang</a>) <a href="/Consortium/Legal/ipr-notice">Usage policies apply</a>.
+        </p>
+      </div><!-- ends copyright -->
+    </div>
+	</footer>
+	<script src="../../javascripts/main-11dc3c0f.js" type="text/javascript"></script>
+  <!-- Piwik -->
+  <script type="text/javascript">
+  var _paq = _paq || [];
+  _paq.push(["setDomains", ["*.www.w3.org/WAI"]]);
+  _paq.push(['trackPageView']);
+  _paq.push(['enableLinkTracking']);
+  (function() {
+  var u="//www.w3.org/analytics/piwik/";
+  _paq.push(['setTrackerUrl', u+'piwik.php']);
+  _paq.push(['setSiteId', 328]);
+  var d=document, g=d.createElement('script'),
+  s=d.getElementsByTagName('script')[0];
+  g.type='text/javascript'; g.async=true; g.defer=true; g.src=u+'piwik.js';
+  s.parentNode.insertBefore(g,s);
+  })();
+  </script>
+  <noscript><p><img src="//www.w3.org/analytics/piwik/piwik.php?idsite=328"
+  style="border:0;" alt="" /></p></noscript>
+  <!-- End Piwik Code -->
+	</body>
+</html>

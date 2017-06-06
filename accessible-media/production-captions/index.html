@@ -1,0 +1,974 @@
+<!doctype html>
+<html class="no-js no-svg" lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>
+  Production options for captions
+  
+    
+       &bull; Accessible Media
+    
+  
+  &bull; WAI Web Accessibility Tutorials
+  </title>
+  <link rel="canonical" href="https://www.w3.org/WAI/tutorials/accessible-media/production-captions/" />
+  <meta name="viewport" content="width=device-width">
+  <link href="../../stylesheets/wai-act-51575202.css" rel="stylesheet" type="text/css" />
+  <script src="../../javascripts/modernizr-a1c597b5.js" type="text/javascript"></script>
+  <link rel="mask-icon" href="../../img/w3cwai-maskicon-cf2cdf03.svg" color="#003366">
+</head>
+<body class="texts">
+  <header role="banner">
+    <div class="w3c-wai-header">
+      <a href="http://w3.org/"><img alt="W3C" width="90" src="../../img/w3c-bde9a11f.svg" /></a>
+      <a href="http://w3.org/WAI/" class="wai"><img alt="Web Accessibility Initiative" src="../../img/wai-590850fc.svg" /></a>
+    </div>
+    <div class="page-title">
+      <a class="" href="../../">Web Accessibility Developer Intros <span class="subheading">Guidance on how to create websites that meet WCAG</span></a>
+    </div>
+  </header>
+  <div class="with-side-menu">
+    <nav aria-label="Skip links" role="navigation">
+      <a href="#nav" class="btn btn-jump">Jump to the navigation</a>
+    </nav>
+<main role="main" class="content editors-draft">
+  <article role="article">
+    <header class="tutorial-heading">
+      <nav class="breadcrumb" aria-label="Breadcrumbs" role="navigation">
+        <p>
+          <span class="home"><a class="" href="../../"><span class="count"></span><span class="txt">Developer Intro home</span></a></span> <span class="icon icon-chevron-right"></span><span class="visuallyhidden">»</span>
+          <span class="other">
+            
+              <a class="" href="../"><span class="count"></span><span class="txt">Accessible Media</span></a> <span class="icon icon-chevron-right"></span><span class="visuallyhidden">»</span>
+            
+            
+            <span class="current-a"><span class="count"></span><span class="txt"><span class="visuallyhidden">Current: </span>Production options for captions</span></span>
+          </span>
+        </p>
+      </nav>
+      <h1>
+        Production options for captions
+      </h1>
+    </header>
+
+    
+    
+      <div class="status">
+        <p><strong>Status:</strong> This is not ready for detailed review. It is an in-progress, unapproved editor’s draft.</p>
+      </div>
+    
+
+
+    <div class="inner">
+
+      
+
+      
+
+
+      <h2 id="caption-basics">Caption basics</h2>
+
+<p>Captions were invented for people who are deaf or hard of hearing, although they are <a href="concepts.html#cc+ad_purpose">recognized to benefit many audiences</a>. They can be open or closed:</p>
+
+<ul>
+  <li><strong>Closed captions</strong> can be hidden and revealed by users, typically
+by operating a button or menu on the player's control bar.</li>
+  <li><strong>Open captions</strong> are visible to everyone and cannot be turned off.</li>
+</ul>
+
+<p>Captions always reflect dialog and narration, and are always written in the same language as the audio (<a href="../subtitles/">subtitles</a>, on the other hand, are a translation of the audio into another language). They also contain important <strong>non-speech information</strong>, such as sound effects or speaker cues.</p>
+
+<p>There are three ways to present captions to viewers:</p>
+
+<ul>
+  <li><strong>Pop-on</strong>: Captions which appear in discrete blocks, usually
+containing 1-3 rows of text. These are normally created for
+pre-produced material, and are used in the majority of captioned
+online videos.<br />
+<a href="https://www.w3.org/WAI/perspectives/captions.html"><img alt="An example of pop-on captions." src="../../img/cc_perspectives-3f58cde5.png" /></a></li>
+  <li><strong>Roll-up</strong>: Captions which scroll up, one row at a time, onto the
+screen. These are normally created for live programming, but can
+also be used for pre-produced material.<br />
+<a href="http://ncamftp.wgbh.org/sp/wai/roll-up_cc.mp4"><img alt="An example of roll-up captions." src="../../img/roll-up-d15ea3f2.png" /></a></li>
+  <li><strong>Paint-on</strong>: Text that appears to "paint" onto the screen, one character at a time, as the data are received. Typically, when one row of captions finishes painting onto the screen, the row scrolls up and a new row begins paint onto the screen.<br />
+<a href="http://ncamftp.wgbh.org/sp/wai/paint-on_cc.mp4"><img alt="An example of paint-on captions." src="../../img/paint-on-038b5817.png" /></a></li>
+</ul>
+
+<p>Note that if a video has no narration or dialog, it is important to
+indicate this to viewers so they do not think that captions are simply
+missing from the presentation. In this situation, provide a brief
+caption at the beginning of the presentation that indicates that no
+audio is provided.</p>
+
+<h2 id="production-workflow-pre-produced-captions">Production workflow: pre-produced captions</h2>
+
+<p>From a technical perspective, captions are simply text presented through
+markup that contains timing information and positioning codes. There are
+a variety of do-it-yourself tools available for creating captions for
+pre-produced video and audio clips.</p>
+
+<h3 id="basic-workflow-for-creating-pre-produced-captions">Basic workflow for creating pre-produced captions:</h3>
+
+<figure class="sample ">
+  <figcaption>Example: </figcaption>
+  <div class="box-content">
+<ol>
+  <li><strong>Enter caption text into the editor</strong><br />
+Transcribe the audio directly into the caption editor or, if
+available, import a transcript.</li>
+  <li><strong>Edit and break text into captions</strong><br />
+Edit for proper spelling and grammar; divide the text into caption
+blocks.</li>
+  <li><strong>Time the captions</strong><br />
+Assign a timecode to each caption that indicates when it will appear
+or disappear from the screen.</li>
+  <li><strong>Review the captions</strong><br />
+Watch the captioned video carefully and eliminate any errors.
+Accuracy is paramount: misspelled or poorly edited and timed
+captions will only make it harder for viewers to follow what is
+happening on-screen.</li>
+  <li><strong>Export a caption file</strong><br />
+Export the captions in the target format. See <a href="../formats/">caption formats and
+examples</a> for more information.</li>
+</ol>
+
+
+  </div></figure>
+
+<p>Below is an image of a caption editor showing how captions have been
+formatted and timestamped.</p>
+
+<p><img alt="A caption editor showing timestamped caption text." src="../../img/timecodes-a7ca7eae.png" /></p>
+
+<h3 id="caption-quality">Caption quality</h3>
+
+<p>Always provide the highest-quality captions that convey 100% accuracy.
+See <a href="#resources-for-writing-quality-captions">resources for writing quality captions</a> for more
+information. Keep the following basic points in mind when writing
+captions:</p>
+
+<ul>
+  <li>Ensure that there are no spelling errors. This includes the names of
+characters or speakers.</li>
+  <li>Use conventional grammar rules. After end punctuation (period,
+question mark, exclamation point, etc.), always begin a new caption.</li>
+  <li>Do not edit unless you have a specific reason to do so (e.g., to
+achieve a specific reading level). Fillers such as "um," "ah," etc.,
+can be deleted to save reading time unless doing so alters the
+representation of the speaker.</li>
+  <li>Do not censor: the captions should always accurately represent what
+is spoken.</li>
+</ul>
+
+<h3 id="a-word-about-styling-captions">A word about styling captions</h3>
+
+<p>Most caption-creation tools give authors the ability to style captions in a number of ways: e.g., adding color to the text or background, specifying different font faces and sizes, etc. While it is possible to add styling information to captions, the support in browsers and other media players varies. If the media is produced for a specific player, style the captions to that player’s capabilities.  Otherwise, rely instead on the player's default presentation style (usually white characters on a black box).</p>
+
+<p id="cutom_cc">Note that many media players give users the option to <a href="../playing/#user-customization-of-captions">customize captions to personal preferences</a>, and these preferences always override author styling. For some users, customizing captions is essential, not just an enhancement:  styling captions in specific manners (for example, yellow text over a black background, with a very large font size) may be the only way for them to make the text readable.</p>
+
+<p>Below is an image showing how bold text can be added to captions in a
+caption-authoring tool.</p>
+
+<p><img alt="A caption editor showing white caption text on a black background. One
+row of text is bold." src="../../img/text_bold-c4c0d820.png" />
+And here is the WebVTT markup for that caption…</p>
+
+<figure class="code ">
+  <figcaption>Code snippet: </figcaption>
+<pre class="highlight html"><code>1
+00:00:00.670 --&gt; 00:00:06.680
+The genome is a storybook that's been edited
+<span class="nt">&lt;b&gt;</span>for a couple billion years.<span class="nt">&lt;/b&gt;</span>
+</code></pre>
+</figure>
+<p>…and the TTML markup for the same caption:</p>
+
+<figure class="code ">
+  <figcaption>Code snippet: </figcaption>
+<pre class="highlight html"><code><span class="nt">&lt;p</span> <span class="na">xml:id=</span><span class="s">"s_1"</span> <span class="na">begin=</span><span class="s">"00:00:00.67"</span> <span class="na">end=</span><span class="s">"00:00:06.67"</span><span class="nt">&gt;</span>
+The genome is a storybook that's been edited<span class="nt">&lt;br</span> <span class="nt">/&gt;</span>
+<span class="nt">&lt;span</span> <span class="na">tts:fontWeight=</span><span class="s">"bold"</span><span class="nt">&gt;</span>for a couple billion years.<span class="nt">&lt;/span&gt;&lt;/p&gt;</span>
+</code></pre>
+</figure>
+<h3 id="automatically-generated-captions">Automatically generated captions</h3>
+
+<p>Automatically generated captions should <strong>never</strong> be used as the sole
+method to produce captions, but they can be a part of the production
+workflow. See the <a href="../automatically-generated-captions/">discussion about automatic captions</a> for
+more information.</p>
+
+<h2 id="resources-for-writing-quality-captions">Resources for writing quality captions</h2>
+
+<p>The importance of presenting users with high-quality, accurate captions
+cannot be overemphasized. Use the guidelines below to help create
+captions that are informative and easy to read.</p>
+
+<ul>
+  <li><a href="http://www.captioningkey.org/quality_captioning.html"><abbr title="Described and Captioned Media Program">DCMP</abbr> Captioning
+Key</a></li>
+  <li><a href="https://www.dcmp.org/ai/225/"><abbr title="Described and Captioned Media Program">DCMP</abbr> Captioning Tip Sheet</a></li>
+  <li><a href="http://main.wgbh.org/wgbh/pages/mag/services/captioning/faq/sugg-styles-conv-faq.html">Captioning
+FAQ</a></li>
+</ul>
+
+
+
+      <div class="resources">
+  <h2 id="related">Related WCAG 2.0 resources</h2>
+  <div class="resources-inner">
+	  <p>These tutorials provide best-practice guidance on implementing accessibility in different situations. This page combines the following WCAG 2.0 success criteria and techniques from different conformance levels:</p>
+	  
+	    <p><strong>Success Criteria:</strong></p>
+	    <ul>
+	      
+	        
+	          
+	        
+	      
+	        
+	          
+	        
+	      
+	        
+	          
+	            <li><p><a href="https://www.w3.org/WAI/WCAG20/quickref/#qr-media-equiv-captions">1.2.2 Captions (Prerecorded):</a> Captions are provided for all prerecorded audio content in synchronized media, except when the media is a media alternative for text and is clearly labeled as such. (Level&nbsp;A)</p></li>
+	          
+	        
+	      
+	        
+	          
+	        
+	      
+	        
+	          
+	        
+	      
+	        
+	          
+	        
+	      
+	        
+	          
+	        
+	      
+	        
+	          
+	        
+	      
+	        
+	          
+	        
+	      
+	        
+	          
+	        
+	      
+	        
+	          
+	        
+	      
+	        
+	          
+	        
+	      
+	        
+	          
+	        
+	      
+	        
+	          
+	        
+	      
+	        
+	          
+	        
+	      
+	        
+	          
+	        
+	      
+	        
+	          
+	        
+	      
+	        
+	          
+	        
+	      
+	        
+	          
+	        
+	      
+	        
+	          
+	        
+	      
+	        
+	          
+	        
+	      
+	        
+	          
+	        
+	      
+	        
+	          
+	        
+	      
+	        
+	          
+	        
+	      
+	        
+	          
+	        
+	      
+	        
+	          
+	        
+	      
+	        
+	          
+	        
+	      
+	        
+	          
+	        
+	      
+	        
+	          
+	        
+	      
+	        
+	          
+	        
+	      
+	        
+	          
+	        
+	      
+	    </ul>
+	  
+	  
+	    <p><strong>Techniques:</strong></p>
+	    <ul>
+	      
+	        
+	          
+	        
+	      
+	        
+	          
+	        
+	      
+	        
+	          
+	        
+	      
+	        
+	          
+	        
+	      
+	        
+	          
+	        
+	      
+	        
+	          
+	        
+	      
+	        
+	          
+	        
+	      
+	        
+	          
+	        
+	      
+	        
+	          
+	        
+	      
+	        
+	          
+	        
+	      
+	        
+	          
+	        
+	      
+	        
+	          
+	        
+	      
+	        
+	          
+	        
+	      
+	        
+	          
+	        
+	      
+	        
+	          
+	        
+	      
+	        
+	          
+	        
+	      
+	        
+	          
+	        
+	      
+	        
+	          
+	        
+	      
+	        
+	          
+	        
+	      
+	        
+	          
+	        
+	      
+	        
+	          
+	        
+	      
+	        
+	          
+	        
+	      
+	        
+	          
+	        
+	      
+	        
+	          
+	        
+	      
+	        
+	          
+	        
+	      
+	        
+	          
+	        
+	      
+	        
+	          
+	        
+	      
+	        
+	          
+	        
+	      
+	        
+	          
+	        
+	      
+	        
+	          
+	        
+	      
+	        
+	          
+	        
+	      
+	        
+	          
+	        
+	      
+	        
+	          
+	        
+	      
+	        
+	          
+	            <li><a href="https://www.w3.org/TR/WCAG20-TECHS/G87">G87: Providing closed captions</a></li>
+	          
+	        
+	      
+	        
+	          
+	        
+	      
+	        
+	          
+	        
+	      
+	        
+	          
+	            <li><a href="https://www.w3.org/TR/WCAG20-TECHS/G93">G93: Providing open (always visible) captions</a></li>
+	          
+	        
+	      
+	        
+	          
+	        
+	      
+	        
+	          
+	        
+	      
+	        
+	          
+	        
+	      
+	        
+	          
+	        
+	      
+	        
+	          
+	        
+	      
+	        
+	          
+	        
+	      
+	        
+	          
+	        
+	      
+	        
+	          
+	        
+	      
+	        
+	          
+	        
+	      
+	        
+	          
+	        
+	      
+	        
+	          
+	        
+	      
+	        
+	          
+	        
+	      
+	        
+	          
+	        
+	      
+	        
+	          
+	        
+	      
+	        
+	          
+	        
+	      
+	        
+	          
+	        
+	      
+	        
+	          
+	        
+	      
+	        
+	          
+	        
+	      
+	        
+	          
+	        
+	      
+	        
+	          
+	        
+	      
+	        
+	          
+	        
+	      
+	        
+	          
+	        
+	      
+	        
+	          
+	        
+	      
+	        
+	          
+	        
+	      
+	        
+	          
+	        
+	      
+	        
+	          
+	        
+	      
+	        
+	          
+	        
+	      
+	        
+	          
+	        
+	      
+	        
+	          
+	        
+	      
+	        
+	          
+	        
+	      
+	        
+	          
+	        
+	      
+	        
+	          
+	        
+	      
+	        
+	          
+	        
+	      
+	        
+	          
+	        
+	      
+	        
+	          
+	        
+	      
+	        
+	          
+	        
+	      
+	        
+	          
+	        
+	      
+	        
+	          
+	        
+	      
+	        
+	          
+	        
+	      
+	        
+	          
+	        
+	      
+	        
+	          
+	        
+	      
+	        
+	          
+	        
+	      
+	        
+	          
+	        
+	      
+	        
+	          
+	        
+	      
+	        
+	          
+	        
+	      
+	        
+	          
+	        
+	      
+	        
+	          
+	        
+	      
+	        
+	          
+	        
+	      
+	        
+	          
+	        
+	      
+	        
+	          
+	        
+	      
+	        
+	          
+	        
+	      
+	        
+	          
+	        
+	      
+	        
+	          
+	        
+	      
+	        
+	          
+	        
+	      
+	        
+	          
+	        
+	      
+	        
+	          
+	        
+	      
+	        
+	          
+	        
+	      
+	        
+	          
+	        
+	      
+	        
+	          
+	        
+	      
+	        
+	          
+	        
+	      
+	        
+	          
+	        
+	      
+	        
+	          
+	        
+	      
+	    </ul>
+	  
+  </div>
+</div>
+
+
+      <nav role="navigation" aria-label="Previous/Next" id="tools">
+  <ul>
+    
+      
+        <li class="prev">
+          <span><a rel="prev" class="" href="../"><span class="count"></span><span class="txt"><span class="dir">Previous:</span><span class="title">Accessible Media Concepts</span></span></a></span>
+        </li>
+      
+      
+        
+        
+        
+      
+        
+        
+        
+          <li class="next">
+            <span><a rel="next" class="" href="../formats/"><span class="count"></span><span class="txt"><span class="dir">Next:</span><span class="title">Caption formats</span></span></a></span>
+          </li>
+        
+      
+        
+        
+        
+      
+        
+        
+        
+      
+        
+        
+        
+      
+        
+        
+        
+      
+        
+        
+        
+      
+        
+        
+        
+      
+    
+  </ul>
+</nav>
+
+
+      <aside class="side-box github" role="complementary">
+  <h2 class="heading">We welcome your ideas</h2>
+  <p>Please send any ideas, suggestions, or comments to the <a href="mailto:wai-eo-editors@w3.org?subject=[Tutorial%20Feedback]">(publicly-archived) mailing list wai-eo-editors@w3.org</a>. You can also contribute to the <a href="https://github.com/w3c/wai-media-intro" rel="nofollow">code directly on Github</a>.</p>
+
+	<div class="editpage">
+  	<a class="btn" href="https://github.com/w3c/wai-media-intro/blob/master/source/accessible-media/production-captions.html.erb.md">Fork &amp; edit this page on Github</a>
+	</div>
+
+</aside>
+
+
+    </div>
+  </article>
+</main>
+<div class="navigation">
+  <nav role="navigation" aria-label="Main" id="nav">
+    <h2 class="list-heading" id="list-heading-tutorials">
+      
+          Accessible Media Tutorial
+      
+    </h2>
+    <ul aria-labelledby="list-heading-tutorials">
+      
+        
+      
+      
+        
+          <li class="intro"><a class="" href="../"><span class="count"></span><span class="txt">Concepts</span></a></li>
+        
+        
+          
+            <li>
+              <span class="current-a"><span class="count"></span><span class="txt"><span class="visuallyhidden">Current: </span>Captions</span></span>
+              
+            </li>
+          
+        
+          
+            <li>
+              <a class="" href="../formats/"><span class="count"></span><span class="txt">Caption formats</span></a>
+              
+            </li>
+          
+        
+          
+            <li>
+              <a class="" href="../automatically-generated-captions/"><span class="count"></span><span class="txt">Automatic Captions</span></a>
+              
+            </li>
+          
+        
+          
+            <li>
+              <a class="" href="../subtitles/"><span class="count"></span><span class="txt">Subtitles</span></a>
+              
+            </li>
+          
+        
+          
+            <li>
+              <a class="" href="../transcript/"><span class="count"></span><span class="txt">Transcripts</span></a>
+              
+            </li>
+          
+        
+          
+            <li>
+              <a class="" href="../production-audio-description/"><span class="count"></span><span class="txt">Audio descriptions</span></a>
+              
+            </li>
+          
+        
+          
+            <li>
+              <a class="" href="../playing/"><span class="count"></span><span class="txt">Playing media</span></a>
+              
+            </li>
+          
+        
+          
+            <li>
+              <a class="" href="../decision-tree/"><span class="count"></span><span class="txt">Decision Trees</span></a>
+              
+            </li>
+          
+        
+      
+    </ul>
+    <h2 class="list-heading" id="list-heading-topics">
+  All Developer Intros
+</h2>
+<ul class="topics" aria-labelledby="list-heading-topics">
+  <li><span class="current-a"><span class="count"></span><span class="txt"><span class="visuallyhidden">Current: </span>Accessible Media <span class="status">editors-draft</span></span></span></li>
+</ul>
+
+  </nav>
+</div>
+  </div>
+	<footer id="footer" role="contentinfo" aria-labelledby="wai_footerheading">
+    <div>
+		<h2 id="wai_footerheading">Document Information</h2>
+    <p><strong>Feedback: We welcome ideas for improvements, bug reports, and comments</strong> via <a href="https://github.com/w3c/wai-tutorials">GitHub</a> or e-mail to <a href="mailto:wai-eo-editors@w3.org">wai-eo-editors@w3.org</a> (a publicly archived list) or <a href="mailto:wai@w3.org">wai@w3.org</a> (a WAI staff-only list).</p>
+		<ul>
+			<li><strong>Status:</strong>
+				
+	        [EDITOR’S DRAFT] updated
+	      
+	      26 May 2017
+	      
+			</li>
+      <li>
+  Editors:
+  <ul class="inline">
+    <li>Geoff Freed</li><li>Judy Brewer</li>
+  </ul>
+
+  Contributors:
+  <ul class="inline">
+    <li>The Education and Outreach Working Group (<a href="https://www.w3.org/WAI/EO/">EOWG</a>)</li>
+  </ul>
+</li>
+
+<li>
+  Developed with support from the <a href="https://www.w3.org/WAI/WCAGTA/">U.S. Access Board, WCAG TA Project</a>
+</li>
+
+      <li>[<a class="" href="../../attributions/"><span class="count"></span><span class="txt">Attributions</span></a>]  [<a class="" href="../../changelog/"><span class="count"></span><span class="txt">Changelog</span></a>]</li>
+    </ul>
+    <p>
+    	[<a href="https://www.w3.org/WAI/sitemap.html">WAI Site Map</a>]
+    	[<a href="https://www.w3.org/WAI/sitehelp.html">Help with WAI Website</a>]
+    	[<a href="https://www.w3.org/WAI/search.php">Search</a>]
+    	[<a href="https://www.w3.org/WAI/contacts">Contacting WAI</a>]
+		</p>
+    <div class="copyright">
+        <p>
+	        Copyright &#xA9; 2014 W3C <sup>&#xAE;</sup> (<a href="http://www.csail.mit.edu/"><abbr title="Massachusetts Institute of Technology">MIT</abbr></a>, <a href="http://www.ercim.eu/"><abbr title="European Research Consortium for Informatics and Mathematics">ERCIM</abbr></a>, <a href="http://www.keio.ac.jp/">Keio</a>, <a href="http://ev.buaa.edu.cn/">Beihang</a>) <a href="/Consortium/Legal/ipr-notice">Usage policies apply</a>.
+        </p>
+      </div><!-- ends copyright -->
+    </div>
+	</footer>
+	<script src="../../javascripts/main-11dc3c0f.js" type="text/javascript"></script>
+  <!-- Piwik -->
+  <script type="text/javascript">
+  var _paq = _paq || [];
+  _paq.push(["setDomains", ["*.www.w3.org/WAI"]]);
+  _paq.push(['trackPageView']);
+  _paq.push(['enableLinkTracking']);
+  (function() {
+  var u="//www.w3.org/analytics/piwik/";
+  _paq.push(['setTrackerUrl', u+'piwik.php']);
+  _paq.push(['setSiteId', 328]);
+  var d=document, g=d.createElement('script'),
+  s=d.getElementsByTagName('script')[0];
+  g.type='text/javascript'; g.async=true; g.defer=true; g.src=u+'piwik.js';
+  s.parentNode.insertBefore(g,s);
+  })();
+  </script>
+  <noscript><p><img src="//www.w3.org/analytics/piwik/piwik.php?idsite=328"
+  style="border:0;" alt="" /></p></noscript>
+  <!-- End Piwik Code -->
+	</body>
+</html>
