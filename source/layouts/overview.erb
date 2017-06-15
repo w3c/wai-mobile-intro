@@ -1,0 +1,33 @@
+<%= partial "layouts/header" %>
+<main role="main" class="content <%= current_page.data.status %>">
+  <article role="article">
+  <header class="tutorial-heading">
+    <h1>
+      <%= current_page.data.title %>
+    </h1>
+  </header>
+
+  <% if current_page.data.status=="draft" %>
+  <div class="status">
+    <p><strong>Status:</strong> This is an in-progress, unapproved draft.</p>
+  </div>
+  <% end %>
+  <% if current_page.data.status=="editors-draft" %>
+  <div class="status">
+    <p><strong>Status (not ready for review):</strong> This is an in-progress, unapproved editor’s draft. Content may change at any time without notice.</p>
+  </div>
+  <% end %>
+
+  <div class="inner">
+    <%= yield %>
+
+    <%= partial "layouts/resources" %>
+
+    <%= partial "layouts/contribute" %>
+  </div>
+  </article>
+</main>
+<div class="navigation" aria-label="Navigation" id="nav">
+  <%= partial 'layouts/topic_navigation' %>
+</div>
+<%= partial "layouts/footer" %>

@@ -1,0 +1,37 @@
+<!doctype html>
+<html class="no-js no-svg" lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>
+  <%= current_page.data.title %>
+  <% if current_page.data.order == 1 %>
+    <% if current_page.data.tutorial_title %>
+      <%= " &bull; " + current_page.data.tutorial_title %>
+    <% end %>
+  <% else %>
+    <% if current_page.parent and current_page.parent.data.tutorial_title %>
+      <%= " &bull; " + current_page.parent.data.tutorial_title %>
+    <% end %>
+  <% end %>
+  &bull; WAI Web Accessibility Tutorials
+  </title>
+  <link rel="canonical" href="https://www.w3.org/WAI/tutorials<%= current_page.url %>" />
+  <meta name="viewport" content="width=device-width">
+  <%= stylesheet_link_tag("wai-act", {media: false}) %>
+  <%= javascript_include_tag  "modernizr" %>
+  <link rel="mask-icon" href="<%= url_for('/img/w3cwai-maskicon.svg') %>" color="#003366">
+</head>
+<body class="texts">
+  <header role="banner">
+    <div class="w3c-wai-header">
+      <a href="http://w3.org/"><%= image_tag 'w3c.svg', :alt => "W3C", :width => "90" %></a>
+      <a href="http://w3.org/WAI/" class="wai"><%= image_tag 'wai.svg', :alt => "Web Accessibility Initiative" %></a>
+    </div>
+    <div class="page-title">
+      <%= x_link_to('Web Accessibility Developer Intros <span class="subheading">Guidance on how to create websites that meet WCAG</span>', '/index.html', :relative => true) %>
+    </div>
+  </header>
+  <div class="with-side-menu">
+    <nav aria-label="Skip links" role="navigation">
+      <a href="#nav" class="btn btn-jump">Jump to the navigation</a>
+    </nav>
