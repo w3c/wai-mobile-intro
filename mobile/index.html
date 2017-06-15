@@ -1,0 +1,432 @@
+<!doctype html>
+<html class="no-js no-svg" lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>
+  Mobile Concepts
+  
+    
+       &bull; Mobile
+    
+  
+  &bull; WAI Web Accessibility Tutorials
+  </title>
+  <link rel="canonical" href="https://www.w3.org/WAI/tutorials/mobile/" />
+  <meta name="viewport" content="width=device-width">
+  <link href="../stylesheets/wai-act-51575202.css" rel="stylesheet" type="text/css" />
+  <script src="../javascripts/modernizr-a1c597b5.js" type="text/javascript"></script>
+  <link rel="mask-icon" href="../img/w3cwai-maskicon-cf2cdf03.svg" color="#003366">
+</head>
+<body class="texts">
+  <header role="banner">
+    <div class="w3c-wai-header">
+      <a href="http://w3.org/"><img alt="W3C" width="90" src="../img/w3c-bde9a11f.svg" /></a>
+      <a href="http://w3.org/WAI/" class="wai"><img alt="Web Accessibility Initiative" src="../img/wai-590850fc.svg" /></a>
+    </div>
+    <div class="page-title">
+      <a class="" href="../">Web Accessibility Developer Intros <span class="subheading">Guidance on how to create websites that meet WCAG</span></a>
+    </div>
+  </header>
+  <div class="with-side-menu">
+    <nav aria-label="Skip links" role="navigation">
+      <a href="#nav" class="btn btn-jump">Jump to the navigation</a>
+    </nav>
+<main role="main" class="content editors-draft">
+  <article role="article">
+    <header class="tutorial-heading">
+      <nav class="breadcrumb" aria-label="Breadcrumbs" role="navigation">
+        <p>
+          <span class="home"><a class="" href="../"><span class="count"></span><span class="txt">Developer Intro home</span></a></span> <span class="icon icon-chevron-right"></span><span class="visuallyhidden">»</span>
+          <span class="other">
+            
+            
+              <span class="current-a"><span class="count"></span><span class="txt"><span class="visuallyhidden">Current: </span>Mobile</span></span> <span class="icon icon-chevron-right"></span><span class="visuallyhidden">»</span>
+            
+            <span class="current-a"><span class="count"></span><span class="txt"><span class="visuallyhidden">Current: </span>Mobile Concepts</span></span>
+          </span>
+        </p>
+      </nav>
+      <h1>
+        Mobile Concepts
+      </h1>
+    </header>
+
+    
+    
+      <div class="status">
+        <p><strong>Status:</strong> This is not ready for detailed review. It is an in-progress, unapproved editor’s draft.</p>
+      </div>
+    
+
+
+    <div class="inner">
+
+      
+
+              
+      
+
+
+      <p>If you’re used to developing in a desktop environment, or on a mobile environment without thinking much about accessibility, you’ve come to the right place to learn about making mobile devices accessible. First, some essential background.</p>
+
+<h2 id="whats-mobile">What’s mobile?</h2>
+
+<p>Mobile devices are wireless and run apps including web browsers. They’re easy to carry and can be used in a wide variety of settings, including outside.</p>
+
+<p>Mobile devices range from small handheld devices (e.g. feature phones, smartphones) to somewhat larger tablet devices.</p>
+
+<p>The term also applies to wearables (e.g. smart-glasses, smart-watches and fitness bands). And it’s also relevant to small computing devices embedded into car dashboards, airplane seatbacks, digital TV, household appliances and the web/internet of things.</p>
+
+<p>Many mobile devices often include platform-level settings that help users with disabilities interact with content. These include zoom, larger fonts, and captions.</p>
+
+<h2 id="how-is-mobile-different-than-desktop">How is mobile different than desktop?</h2>
+
+<h3 id="portability">Portability</h3>
+
+<p>The advent of smart phones with app functionality has made it possible to use computer apps anywhere.  Mobile devices are small and therefore portable, convenient, and they’re also relatively cost-effective. Mobile devices can be used on the go and with one hand.</p>
+
+<p>In contrast, desktop  users are likely to sit in an office with a desk and a chair, laptop users might roam to different locations but likely use the computer on a surface, and tablet users most likely are using the device with two hands.</p>
+
+<p>This ability to take a mobile device anywhere has surfaced environmental impacts of computing on-the-go. These include noisy environments such as a café or a crowd, environments where one hand is busy such as standing up on a subway car, environments where the user is distracted such as a busy street or meeting, and variable lighting, including direct sunlight.</p>
+
+<h3 id="screen-size">Screen size</h3>
+<p>The size of a screen affects the tasks people will be able to do using it. This was very limiting for early mobile devices, but as designers have become better at accommodating small screens, and mobile screens of become a little bigger, it’s become more comfortable to use mobile devices for a wider range of tasks. At the same time, screen size is less of a distinction for users who are blind.</p>
+
+<h3 id="input">Input</h3>
+<p>The advent of touchscreen technology made it possible to interact with mobile devices without a physical keyboard, which has allowed them to be smaller and lighter.</p>
+
+<h3 id="orientation-options">Orientation options</h3>
+<p>It’s possible to change the orientation of many mobile devices just by turning them. Only some desktop screens swivel to change orientation. Changing orientation is often awkward on a laptop because turning the screen renders the keyboard useless. At the same time, some device users may have their mobile devices in a fixed orientation, e.g. attached to a wheelchair.</p>
+
+<h3 id="customizability">Customizability</h3>
+<p>The developing mobile market has fostered a rich environment of customization. Mobile devices have many sensors that can be changed to customize the mobile experience, e.g. camera, geolocation, telephone capabilities, actuators.</p>
+
+<h2 id="how-is-mobile-the-same-as-desktop">How is mobile the same as desktop?</h2>
+<p>Mobile devices started out as fairly distinct from desktop and laptop computers, but over time the categories have blurred. Today, there’s no absolute divide between desktop/laptop and mobile.</p>
+
+<h2 id="merging-input-methods">Merging input methods</h2>
+<p>After the advent of the mobile touchscreen, mobile users controlled devices using touch, and controlled the desktop using keyboard and mouse. But over time some laptops and desktop screens have gained touchscreen gesture control, while mobile devices can increasingly be connected to an external keyboard and mouse.</p>
+
+<p>Early mobile devices didn’t include speech input for dictation or for control, while speech input for dictation and control has been an option on the desktop for decades. But many of today’s mobile devices allow the user to dictate and have pioneered intelligent agents that can be summoned by speech. Meanwhile, the intelligent agents have migrated to the desktop.</p>
+
+<h2 id="merging-development-techniques">Merging development techniques</h2>
+<p>In the early days of mobile browsers there were different webpage versions for desktop versus mobile. But over time web pages have shifted to responsive design, which can transition into a mobile screen size even on a desktop.</p>
+
+<p>The vast majority of user interface elements for desktops, such as hyperlinks, tables, buttons, pop-up menus, are equally applicable to mobile.</p>
+
+<p>Also, although mobile and desktop operating systems are distinct, some laptops are using mobile operating systems.</p>
+
+<h2 id="mobile-is-part-of-a-continuum">Mobile is part of a continuum</h2>
+<p>So there’s really no such thing as developing for mobile-only or desktop-only. There’s a continuum from desktop to mobile into native applications. Mobile development spans web content, browser apps, native apps, and hybrid apps that range from web apps wrapped with native packaging to native apps that contain some HTML/CSS.</p>
+
+<p>At the same time, the new capabilities of mobile devices are driving changes on the desktop, including the touch interface, intelligent agents, and better support for smaller windows.</p>
+
+<p>Key aspects of mobile devices that affect accessibility:</p>
+
+<ul>
+  <li>Touchscreen</li>
+  <li>Small screen size</li>
+  <li>The impacts of using the device in many different settings</li>
+  <li>Sensors that allow applications to tap aspects such as device orientation and geolocation</li>
+  <li>Pressure sensors that enable 3D touch and pressure-sensitive styluses</li>
+  <li>Keyboard and speech input use as alternate input methods</li>
+</ul>
+
+<p>This changing context is important for the whole field. This developers guide gives you what you need to know as these changes progress.</p>
+
+<h2 id="why-mobile-is-important">Why mobile is important</h2>
+
+<p>Mobile has become a central technology.</p>
+
+<p>World-wide, Mobile phone users reached 4.77 billion in 2017, and pass the 5 billion mark by 2019 according to Statista.com. In 2014, nearly 60 percent of the population worldwide already owned a mobile phone (<a href="https://www.statista.com/statistics/274774/forecast-of-mobile-phone-users-worldwide/">Source</a>).</p>
+
+<p>With such a large portion of the world’s population using smart phones, accessibility barriers on mobile have great impact on people with disabilities. Impacts include access to education, jobs, financial institutions and entertainment.</p>
+
+<p>The following personas show how people with a variety of accessibility needs use mobile phones:</p>
+
+<h3 id="joe">Joe</h3>
+
+<p>Joe has hand tremors from Parkinsons.</p>
+
+<ul>
+  <li>Touching small areas of the screen is difficult for Joe</li>
+  <li>He often accidentally activates a control when controls are close together</li>
+</ul>
+
+<p>Potential solutions:</p>
+
+<ul>
+  <li><a href="https://www.w3.org/TR/mobile-accessibility-mapping/#touch-target-size-and-spacing">Touch target size and spacing</a></li>
+  <li><a href="https://www.w3.org/TR/mobile-accessibility-mapping/#touchscreen-gestures">Touchscreen gestures</a></li>
+  <li><a href="https://www.w3.org/TR/mobile-accessibility-mapping/#placing-buttons-where-they-are-easy-to-access">Placing Buttons where they are easy to access</a></li>
+</ul>
+
+<h3 id="rebecca">Rebecca</h3>
+
+<p>Rebecca uses an external keyboard with her Android tablet and the onscreen keyboard on her Android phone.</p>
+
+<ul>
+  <li>Rebecca often uses touch, speech and keyboard to access content</li>
+  <li>She prefers the standard onscreen keyboard to update based on the type of data that needs to be entered</li>
+</ul>
+
+<p>Potential solution:</p>
+
+<ul>
+  <li><a href="https://www.w3.org/TR/mobile-accessibility-mapping/#keyboard-control-for-touchscreen-devices">Keyboard control for touchscreen devices</a></li>
+</ul>
+
+<h3 id="mark">Mark</h3>
+
+<p>Mark has light sensitivity and 20/200 vision.</p>
+
+<ul>
+  <li>Mark has a hard time seeing the screen – especially outside where there is a lot of glare</li>
+  <li>His device is set to large fonts and increased contrast</li>
+  <li>He holds the device close to his face and uses the zoom function and text-to-speech</li>
+</ul>
+
+<p>Potential solution:</p>
+
+<ul>
+  <li><a href="https://www.w3.org/TR/mobile-accessibility-mapping/#small-screen-size">Small screen size</a></li>
+</ul>
+
+<h3 id="shawn">Shawn</h3>
+
+<p>Shawn uses a wheelchair and a head wand.</p>
+
+<ul>
+  <li>Shawn’s iPad is bolted onto the side of his wheelchair in landscape orientation and he sets his device to remain in landscape orientation</li>
+</ul>
+
+<p>Potential solution:</p>
+
+<ul>
+  <li><a href="https://www.w3.org/TR/mobile-accessibility-mapping/#changing-screen-orientation-portrait-landscape">Changing screen orientation portrait landscape</a></li>
+</ul>
+
+<h3 id="joyce">Joyce</h3>
+
+<p>Joyce has repetitive strain injuries in her hands.</p>
+
+<ul>
+  <li>Using the touch interface can be painful</li>
+  <li>She uses the speech button on her smart phone to dictate texts and email and her smart phone’s intelligent agent to launch apps and search the web (e.g. “Launch Editorial”, “Search the web for green apples”)</li>
+</ul>
+
+<p>Potential solutions:</p>
+
+<ul>
+  <li><a href="https://www.w3.org/TR/mobile-accessibility-mapping/#placing-buttons-where-they-are-easy-to-access">Placing Buttons where they are easy to access</a></li>
+  <li><a href="https://www.w3.org/TR/mobile-accessibility-mapping/#provide-clear-indication-that-elements-are-actionable">Provide clear indication that elements are actionable</a></li>
+</ul>
+
+<h3 id="gabi">Gabi</h3>
+
+<p>Gabi uses a screen reader with touch, and uses dictation and Siri to more quickly enter content and perform functions.</p>
+
+<ul>
+  <li>Gabi prefers to access content on her iPhone so it’s important that her different means of input: touch, gestures and speech – work with the screen reader</li>
+  <li>She faces challenges with inaccessible content similar to the desktop</li>
+</ul>
+
+<p>Potential solution:</p>
+
+<ul>
+  <li>Follow <a href="https://www.w3.org/TR/WCAG20/">WCAG 2.0 for mobile</a></li>
+  <li>Many WCAG techniques apply mobile</li>
+</ul>
+
+<p>For more details on personas see <a href="https://www.w3.org/WAI/intro/people-use-web/stories">stories of web users</a></p>
+
+<h2 id="related-mobile-accessibility-resources">Related Mobile Accessibility Resources</h2>
+
+<h3 id="w3c">W3C</h3>
+
+<ul>
+  <li><a href="https://www.w3.org/WAI/mobile/">W3C mobile accessibility landing page</a></li>
+</ul>
+
+<h3 id="other-guidance">Other guidance</h3>
+
+<ul>
+  <li><a href="http://www.apple.com/accessibility/">Apple accessibility</a></li>
+  <li><a href="https://developer.android.com/guide/topics/ui/accessibility/">Android accessibility</a></li>
+  <li><a href="http://www.funka.com/en/our-assignments/research-and-innovation/archive---research-projects/mobile-guidelines/">Funka mobile guidelines</a></li>
+  <li><a href="http://www.bbc.co.uk/guidelines/futuremedia/accessibility/mobile_access.shtml">BBC Mobile Guidelines</a></li>
+  <li><a href="https://www.microsoft.com/en-us/Accessibility/windows">Microsoft Accessibility</a></li>
+</ul>
+
+
+
+      
+
+      <nav role="navigation" aria-label="Previous/Next" id="tools">
+  <ul>
+    
+      
+      
+        
+        
+          <li class="next">
+            <span><a rel="next" class="" href="wai-guidance/"><span class="count"></span><span class="txt"><span class="dir">Next:</span><span class="title">WAI Guidance</span></span></a></span>
+          </li>
+        
+      
+      
+        
+        
+      
+      
+        
+        
+      
+      
+        
+        
+      
+      
+        
+        
+      
+      
+        
+        
+      
+    
+  </ul>
+</nav>
+
+
+      <aside class="side-box github" role="complementary">
+  <h2 class="heading">We welcome your ideas</h2>
+  <p>Please send any ideas, suggestions, or comments to the <a href="mailto:wai-eo-editors@w3.org?subject=[Tutorial%20Feedback]">(publicly-archived) mailing list wai-eo-editors@w3.org</a>. You can also contribute to the <a href="https://github.com/w3c/wai-media-intro" rel="nofollow">code directly on Github</a>.</p>
+
+	<div class="editpage">
+  	<a class="btn" href="https://github.com/w3c/wai-media-intro/blob/master/source/mobile/index.html.erb.md">Fork &amp; edit this page on Github</a>
+	</div>
+
+</aside>
+
+
+    </div>
+  </article>
+</main>
+<div class="navigation">
+  <nav role="navigation" aria-label="Main" id="nav">
+    <h2 class="list-heading" id="list-heading-tutorials">
+      
+        Mobile Tutorial
+      
+    </h2>
+    <ul aria-labelledby="list-heading-tutorials">
+      
+        
+      
+      
+        
+          <li class="intro"><span class="current-a"><span class="count"></span><span class="txt"><span class="visuallyhidden">Current: </span>Concepts</span></span></li>
+        
+        
+          
+            <li><a class="" href="wai-guidance/"><span class="count"></span><span class="txt">WAI Guidance</span></a></li>
+          
+        
+          
+            <li><a class="" href="form-labels/"><span class="count"></span><span class="txt">Related Tips and Techniques: Mobile Form Labels</span></a></li>
+          
+        
+          
+            <li><a class="" href="mobile-menus/"><span class="count"></span><span class="txt">Related Tips and Techniques: Mobile Menus</span></a></li>
+          
+        
+          
+            <li><a class="" href="responsive-images/"><span class="count"></span><span class="txt">Related Tips and Techniques: Responsive Images</span></a></li>
+          
+        
+          
+            <li><a class="" href="responsive-tables/"><span class="count"></span><span class="txt">Related Tips and Techniques: Responsive Data Tables</span></a></li>
+          
+        
+          
+            <li><a class="" href="upcoming/"><span class="count"></span><span class="txt">Upcoming</span></a></li>
+          
+        
+      
+    </ul>
+    <h2 class="list-heading" id="list-heading-topics">
+  All Developer Intros
+</h2>
+<ul class="topics" aria-labelledby="list-heading-topics">
+  <li><span class="current-a"><span class="count"></span><span class="txt"><span class="visuallyhidden">Current: </span>Mobile <span class="status">editors-draft</span></span></span></li>
+</ul>
+
+  </nav>
+</div>
+  </div>
+	<footer id="footer" role="contentinfo" aria-labelledby="wai_footerheading">
+    <div>
+		<h2 id="wai_footerheading">Document Information</h2>
+    <p><strong>Feedback: We welcome ideas for improvements, bug reports, and comments</strong> via <a href="https://github.com/w3c/wai-tutorials">GitHub</a> or e-mail to <a href="mailto:wai-eo-editors@w3.org">wai-eo-editors@w3.org</a> (a publicly archived list) or <a href="mailto:wai@w3.org">wai@w3.org</a> (a WAI staff-only list).</p>
+		<ul>
+			<li><strong>Status:</strong>
+				
+	        [EDITOR’S DRAFT] updated
+	      
+	      15 June 2017
+	      
+			</li>
+      <li>
+  Editors:
+  <ul class="inline">
+    <li>Kim Patch</li><li>Kathy Wahlbin</li><li>Judy Brewer</li>
+  </ul>
+
+  Contributors:
+  <ul class="inline">
+    <li>The Education and Outreach Working Group (<a href="https://www.w3.org/WAI/EO/">EOWG</a>)</li>
+  </ul>
+</li>
+
+<li>
+  Developed with support from the <a href="https://www.w3.org/WAI/WCAGTA/">U.S. Access Board, WCAG TA Project</a>
+</li>
+
+      <li>[<a class="" href="../attributions/"><span class="count"></span><span class="txt">Attributions</span></a>]  [<a class="" href="../changelog/"><span class="count"></span><span class="txt">Changelog</span></a>]</li>
+    </ul>
+    <p>
+    	[<a href="https://www.w3.org/WAI/sitemap.html">WAI Site Map</a>]
+    	[<a href="https://www.w3.org/WAI/sitehelp.html">Help with WAI Website</a>]
+    	[<a href="https://www.w3.org/WAI/search.php">Search</a>]
+    	[<a href="https://www.w3.org/WAI/contacts">Contacting WAI</a>]
+		</p>
+    <div class="copyright">
+        <p>
+	        Copyright &#xA9; 2017 W3C <sup>&#xAE;</sup> (<a href="http://www.csail.mit.edu/"><abbr title="Massachusetts Institute of Technology">MIT</abbr></a>, <a href="http://www.ercim.eu/"><abbr title="European Research Consortium for Informatics and Mathematics">ERCIM</abbr></a>, <a href="http://www.keio.ac.jp/">Keio</a>, <a href="http://ev.buaa.edu.cn/">Beihang</a>) <a href="/Consortium/Legal/ipr-notice">Usage policies apply</a>.
+        </p>
+      </div><!-- ends copyright -->
+    </div>
+	</footer>
+	<script src="../javascripts/main-7b42be13.js" type="text/javascript"></script>
+  <!-- Piwik -->
+  <script type="text/javascript">
+  var _paq = _paq || [];
+  _paq.push(["setDomains", ["*.www.w3.org/WAI"]]);
+  _paq.push(['trackPageView']);
+  _paq.push(['enableLinkTracking']);
+  (function() {
+  var u="//www.w3.org/analytics/piwik/";
+  _paq.push(['setTrackerUrl', u+'piwik.php']);
+  _paq.push(['setSiteId', 328]);
+  var d=document, g=d.createElement('script'),
+  s=d.getElementsByTagName('script')[0];
+  g.type='text/javascript'; g.async=true; g.defer=true; g.src=u+'piwik.js';
+  s.parentNode.insertBefore(g,s);
+  })();
+  </script>
+  <noscript><p><img src="//www.w3.org/analytics/piwik/piwik.php?idsite=328"
+  style="border:0;" alt="" /></p></noscript>
+  <!-- End Piwik Code -->
+	</body>
+</html>

@@ -1,0 +1,389 @@
+<!doctype html>
+<html class="no-js no-svg" lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>
+  Related Tips and Techniques: Mobile Form Labels
+  
+    
+       &bull; Mobile
+    
+  
+  &bull; WAI Web Accessibility Tutorials
+  </title>
+  <link rel="canonical" href="https://www.w3.org/WAI/tutorials/mobile/form-labels/" />
+  <meta name="viewport" content="width=device-width">
+  <link href="../../stylesheets/wai-act-51575202.css" rel="stylesheet" type="text/css" />
+  <script src="../../javascripts/modernizr-a1c597b5.js" type="text/javascript"></script>
+  <link rel="mask-icon" href="../../img/w3cwai-maskicon-cf2cdf03.svg" color="#003366">
+</head>
+<body class="texts">
+  <header role="banner">
+    <div class="w3c-wai-header">
+      <a href="http://w3.org/"><img alt="W3C" width="90" src="../../img/w3c-bde9a11f.svg" /></a>
+      <a href="http://w3.org/WAI/" class="wai"><img alt="Web Accessibility Initiative" src="../../img/wai-590850fc.svg" /></a>
+    </div>
+    <div class="page-title">
+      <a class="" href="../../">Web Accessibility Developer Intros <span class="subheading">Guidance on how to create websites that meet WCAG</span></a>
+    </div>
+  </header>
+  <div class="with-side-menu">
+    <nav aria-label="Skip links" role="navigation">
+      <a href="#nav" class="btn btn-jump">Jump to the navigation</a>
+    </nav>
+<main role="main" class="content editors-draft">
+  <article role="article">
+    <header class="tutorial-heading">
+      <nav class="breadcrumb" aria-label="Breadcrumbs" role="navigation">
+        <p>
+          <span class="home"><a class="" href="../../"><span class="count"></span><span class="txt">Developer Intro home</span></a></span> <span class="icon icon-chevron-right"></span><span class="visuallyhidden">»</span>
+          <span class="other">
+            
+              <a class="" href="../"><span class="count"></span><span class="txt">Mobile</span></a> <span class="icon icon-chevron-right"></span><span class="visuallyhidden">»</span>
+            
+            
+            <span class="current-a"><span class="count"></span><span class="txt"><span class="visuallyhidden">Current: </span>Related Tips and Techniques: Mobile Form Labels</span></span>
+          </span>
+        </p>
+      </nav>
+      <h1>
+        Related Tips and Techniques: Mobile Form Labels
+      </h1>
+    </header>
+
+    
+    
+      <div class="status">
+        <p><strong>Status:</strong> This is not ready for detailed review. It is an in-progress, unapproved editor’s draft.</p>
+      </div>
+    
+
+
+    <div class="inner">
+
+      
+
+      
+
+
+      <p>Form layout can be challenging when screen space is at a minimum. A horizontal layout with adjacent label and form makes the form fields difficult to work with because the text is so small. And if you zoom in to see the form input, the label might not be visible on the screen, making it more difficult to complete the form.</p>
+
+<h2 class="ap" id="vertically-stacked-forms">Vertically Stacked Forms</h2>
+
+<p>Positioning labels above each form element allows both the label and the form element to be visible at the same time. Make sure there is enough spacing between every form element that it is clear which label belongs with each form element.</p>
+
+<figure class="code ">
+  <figcaption>Code snippet: HTML</figcaption>
+<pre class="highlight html"><code><span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"field"</span><span class="nt">&gt;</span>
+  <span class="nt">&lt;label</span> <span class="na">for=</span><span class="s">"first"</span><span class="nt">&gt;</span>First Name<span class="nt">&lt;/label&gt;</span>
+  <span class="nt">&lt;input</span> <span class="na">id=</span><span class="s">"first"</span> <span class="na">type=</span><span class="s">"text"</span><span class="nt">&gt;</span>
+ <span class="nt">&lt;/div&gt;</span>
+
+<span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"field"</span><span class="nt">&gt;</span>
+  <span class="nt">&lt;label</span> <span class="na">for=</span><span class="s">"middle"</span><span class="nt">&gt;</span>Middle Name<span class="nt">&lt;/label&gt;</span>
+  <span class="nt">&lt;input</span> <span class="na">id=</span><span class="s">"middle"</span> <span class="na">type=</span><span class="s">"text"</span><span class="nt">&gt;</span>
+<span class="nt">&lt;/div&gt;</span>
+
+<span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"field"</span><span class="nt">&gt;</span>
+  <span class="nt">&lt;label</span> <span class="na">for=</span><span class="s">"last"</span><span class="nt">&gt;</span>Last Name<span class="nt">&lt;/label&gt;</span>
+  <span class="nt">&lt;input</span> <span class="na">id=</span><span class="s">"last"</span> <span class="na">type=</span><span class="s">"text"</span><span class="nt">&gt;</span>
+<span class="nt">&lt;/div&gt;</span>
+</code></pre>
+</figure>
+<figure class="code ">
+  <figcaption>Code snippet: CSS</figcaption>
+<pre class="highlight css"><code><span class="nc">.field</span> <span class="p">{</span>
+  <span class="nl">margin-bottom</span><span class="p">:</span><span class="m">2em</span><span class="p">;</span>
+<span class="p">}</span>
+
+<span class="nc">.field</span> <span class="nt">input</span> <span class="p">{</span>
+  <span class="nl">display</span><span class="p">:</span><span class="nb">block</span><span class="p">;</span>
+<span class="p">}</span>
+
+<span class="nc">.field</span> <span class="nt">label</span> <span class="p">{</span>
+  <span class="nl">display</span><span class="p">:</span><span class="nb">block</span><span class="p">;</span>
+<span class="p">}</span>
+</code></pre>
+</figure>
+<h2 class="ap" id="vertically-stacked-forms-with-floating-labels">Vertically Stacked Forms with Floating Labels</h2>
+
+<p>It’s popular to minimize the space required for form fields by using placeholder attributes to provide visual labels for the form elements. But the placeholder text goes away after text has been entered, so the "label" is no longer presented visually to the user. This makes it difficult to review entries on a form to ensure they’re correct.</p>
+
+<p>Here’s a different approach that’s more accessible. The label element can be positioned where the placeholder text would normally be positioned. Once a form field receives focus, or when text is entered, the label is repositioned above the form element so the label is still available visually and programmatically.</p>
+
+<figure class="code ">
+  <figcaption>Code snippet: HTML</figcaption>
+<pre class="highlight html"><code><span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"field"</span><span class="nt">&gt;</span>
+  <span class="nt">&lt;label</span> <span class="na">for=</span><span class="s">"first"</span><span class="nt">&gt;</span>First Name<span class="nt">&lt;/label&gt;</span>
+  <span class="nt">&lt;input</span> <span class="na">id=</span><span class="s">"first"</span> <span class="na">type=</span><span class="s">"text"</span><span class="nt">&gt;</span>
+ <span class="nt">&lt;/div&gt;</span>
+
+<span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"field"</span><span class="nt">&gt;</span>
+  <span class="nt">&lt;label</span> <span class="na">for=</span><span class="s">"middle"</span><span class="nt">&gt;</span>Middle Name<span class="nt">&lt;/label&gt;</span>
+  <span class="nt">&lt;input</span> <span class="na">id=</span><span class="s">"middle"</span> <span class="na">type=</span><span class="s">"text"</span><span class="nt">&gt;</span>
+<span class="nt">&lt;/div&gt;</span>
+
+<span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"field"</span><span class="nt">&gt;</span>
+  <span class="nt">&lt;label</span> <span class="na">for=</span><span class="s">"last"</span><span class="nt">&gt;</span>Last Name<span class="nt">&lt;/label&gt;</span>
+  <span class="nt">&lt;input</span> <span class="na">id=</span><span class="s">"last"</span> <span class="na">type=</span><span class="s">"text"</span><span class="nt">&gt;</span>
+<span class="nt">&lt;/div&gt;</span>
+</code></pre>
+</figure>
+<figure class="code ">
+  <figcaption>Code snippet: CSS</figcaption>
+<pre class="highlight css"><code><span class="nc">.field</span> <span class="p">{</span>
+  <span class="nl">position</span><span class="p">:</span><span class="nb">relative</span><span class="p">;</span>
+  <span class="nl">margin-bottom</span><span class="p">:</span><span class="m">1em</span><span class="p">;</span>
+<span class="p">}</span>
+
+<span class="nc">.field</span> <span class="nt">input</span> <span class="p">{</span>
+  <span class="nl">font-size</span><span class="p">:</span><span class="m">1em</span><span class="p">;</span>
+  <span class="nl">padding-top</span><span class="p">:</span><span class="m">.75em</span><span class="p">;</span>
+  <span class="nl">padding-bottom</span><span class="p">:</span><span class="m">.75em</span><span class="p">;</span>
+  <span class="nl">padding-left</span><span class="p">:</span><span class="m">0.5em</span><span class="p">;</span>
+<span class="p">}</span>
+
+<span class="nc">.field.hasContent</span> <span class="nt">input</span> <span class="p">{</span>
+  <span class="nl">padding-top</span><span class="p">:</span> <span class="m">1.25em</span><span class="p">;</span>
+  <span class="nl">padding-bottom</span><span class="p">:</span><span class="m">.25em</span><span class="p">;</span>
+<span class="p">}</span>
+
+<span class="nc">.field</span> <span class="nt">label</span> <span class="p">{</span>
+  <span class="nl">position</span><span class="p">:</span> <span class="nb">absolute</span><span class="p">;</span>
+  <span class="nl">top</span><span class="p">:</span> <span class="m">1em</span><span class="p">;</span>
+  <span class="nl">left</span><span class="p">:</span> <span class="m">1em</span><span class="p">;</span>
+  <span class="nl">color</span><span class="p">:</span> <span class="m">#666666</span><span class="p">;</span>
+  <span class="nl">font-size</span><span class="p">:</span><span class="m">1em</span><span class="p">;</span>
+  <span class="nl">transition</span><span class="p">:</span> <span class="nb">top</span> <span class="m">.2s</span><span class="p">,</span> <span class="nb">left</span> <span class="m">.2s</span><span class="p">;</span>
+<span class="p">}</span>
+<span class="nc">.field.hasContent</span> <span class="nt">label</span> <span class="p">{</span>
+  <span class="nl">top</span><span class="p">:</span><span class="m">.25em</span><span class="p">;</span>
+  <span class="nl">left</span><span class="p">:</span><span class="m">.375em</span><span class="p">;</span>
+  <span class="nl">color</span><span class="p">:</span><span class="m">#000</span><span class="p">;</span>
+  <span class="nl">font-size</span><span class="p">:</span> <span class="m">0.8em</span><span class="p">;</span>
+  <span class="nl">font-weight</span><span class="p">:</span><span class="nb">bold</span><span class="p">;</span>
+  <span class="nl">transition</span><span class="p">:</span> <span class="nb">top</span> <span class="m">.2s</span> <span class="n">ease-out</span><span class="p">,</span> <span class="nb">left</span> <span class="m">.2s</span><span class="p">;</span>
+<span class="p">}</span>
+</code></pre>
+</figure>
+<figure class="code ">
+  <figcaption>Code snippet: JavaScript</figcaption>
+<pre class="highlight javascript"><code><span class="kd">var</span> <span class="nx">floatingLabelFocus</span> <span class="o">=</span> <span class="kd">function</span><span class="p">()</span> <span class="p">{</span>
+    <span class="k">this</span><span class="p">.</span><span class="nx">parentNode</span><span class="p">.</span><span class="nx">classList</span><span class="p">.</span><span class="nx">add</span><span class="p">(</span><span class="s2">"hasContent"</span><span class="p">);</span>
+<span class="p">};</span>
+
+<span class="kd">var</span> <span class="nx">floatingLabelBlur</span> <span class="o">=</span> <span class="kd">function</span><span class="p">()</span> <span class="p">{</span>
+  <span class="k">if</span><span class="p">(</span><span class="k">this</span><span class="p">.</span><span class="nx">value</span><span class="p">.</span><span class="nx">length</span> <span class="o">&gt;</span> <span class="mi">0</span><span class="p">){</span>
+    <span class="k">this</span><span class="p">.</span><span class="nx">parentNode</span><span class="p">.</span><span class="nx">classList</span><span class="p">.</span><span class="nx">add</span><span class="p">(</span><span class="s2">"hasContent"</span><span class="p">);</span>
+  <span class="p">}</span> <span class="k">else</span> <span class="p">{</span>
+    <span class="k">this</span><span class="p">.</span><span class="nx">parentNode</span><span class="p">.</span><span class="nx">classList</span><span class="p">.</span><span class="nx">remove</span><span class="p">(</span><span class="s2">"hasContent"</span><span class="p">);</span>
+  <span class="p">}</span>
+<span class="p">};</span>
+
+<span class="kd">var</span> <span class="nx">classname</span> <span class="o">=</span> <span class="nb">document</span><span class="p">.</span><span class="nx">getElementsByClassName</span><span class="p">(</span><span class="s2">"field"</span><span class="p">);</span>
+
+<span class="k">for</span> <span class="p">(</span><span class="kd">var</span> <span class="nx">i</span> <span class="o">=</span> <span class="mi">0</span><span class="p">;</span> <span class="nx">i</span> <span class="o">&lt;</span> <span class="nx">classname</span><span class="p">.</span><span class="nx">length</span><span class="p">;</span> <span class="nx">i</span><span class="o">++</span><span class="p">)</span> <span class="p">{</span>
+  <span class="kd">var</span> <span class="nx">el</span> <span class="o">=</span> <span class="nx">classname</span><span class="p">[</span><span class="nx">i</span><span class="p">].</span><span class="nx">getElementsByTagName</span><span class="p">(</span><span class="s2">"input"</span><span class="p">)[</span><span class="mi">0</span><span class="p">];</span>
+  <span class="k">if</span><span class="p">(</span><span class="nx">el</span><span class="p">.</span><span class="nx">value</span><span class="p">.</span><span class="nx">length</span> <span class="o">&gt;</span> <span class="mi">0</span><span class="p">){</span>
+    <span class="nx">el</span><span class="p">.</span><span class="nx">parentNode</span><span class="p">.</span><span class="nx">classList</span><span class="p">.</span><span class="nx">add</span><span class="p">(</span><span class="s2">"hasContent"</span><span class="p">);</span>
+  <span class="p">}</span>
+   <span class="nx">el</span><span class="p">.</span><span class="nx">addEventListener</span><span class="p">(</span><span class="s1">'focus'</span><span class="p">,</span> <span class="nx">floatingLabelFocus</span><span class="p">,</span> <span class="kc">false</span><span class="p">);</span>
+   <span class="nx">el</span><span class="p">.</span><span class="nx">addEventListener</span><span class="p">(</span><span class="s1">'blur'</span><span class="p">,</span> <span class="nx">floatingLabelBlur</span><span class="p">,</span> <span class="kc">false</span><span class="p">);</span>
+<span class="p">}</span>
+</code></pre>
+</figure>
+
+
+      
+
+      <nav role="navigation" aria-label="Previous/Next" id="tools">
+  <ul>
+    
+      
+      
+        
+        
+          <li class="prev">
+            <span><a rel="prev" class="" href="../wai-guidance/"><span class="count"></span><span class="txt"><span class="dir">Previous:</span><span class="title">WAI Guidance</span></span></a></span>
+          </li>
+        
+        
+      
+        
+        
+        
+      
+        
+        
+        
+          <li class="next">
+            <span><a rel="next" class="" href="../mobile-menus/"><span class="count"></span><span class="txt"><span class="dir">Next:</span><span class="title">Related Tips and Techniques: Mobile Menus</span></span></a></span>
+          </li>
+        
+      
+        
+        
+        
+      
+        
+        
+        
+      
+        
+        
+        
+      
+    
+  </ul>
+</nav>
+
+
+      <aside class="side-box github" role="complementary">
+  <h2 class="heading">We welcome your ideas</h2>
+  <p>Please send any ideas, suggestions, or comments to the <a href="mailto:wai-eo-editors@w3.org?subject=[Tutorial%20Feedback]">(publicly-archived) mailing list wai-eo-editors@w3.org</a>. You can also contribute to the <a href="https://github.com/w3c/wai-media-intro" rel="nofollow">code directly on Github</a>.</p>
+
+	<div class="editpage">
+  	<a class="btn" href="https://github.com/w3c/wai-media-intro/blob/master/source/mobile/form-labels.html.erb.md">Fork &amp; edit this page on Github</a>
+	</div>
+
+</aside>
+
+
+    </div>
+  </article>
+</main>
+<div class="navigation">
+  <nav role="navigation" aria-label="Main" id="nav">
+    <h2 class="list-heading" id="list-heading-tutorials">
+      
+          Mobile Tutorial
+      
+    </h2>
+    <ul aria-labelledby="list-heading-tutorials">
+      
+        
+      
+      
+        
+          <li class="intro"><a class="" href="../"><span class="count"></span><span class="txt">Concepts</span></a></li>
+        
+        
+          
+            <li>
+              <a class="" href="../wai-guidance/"><span class="count"></span><span class="txt">WAI Guidance</span></a>
+              
+            </li>
+          
+        
+          
+            <li>
+              <span class="current-a"><span class="count"></span><span class="txt"><span class="visuallyhidden">Current: </span>Related Tips and Techniques: Mobile Form Labels</span></span>
+              
+            </li>
+          
+        
+          
+            <li>
+              <a class="" href="../mobile-menus/"><span class="count"></span><span class="txt">Related Tips and Techniques: Mobile Menus</span></a>
+              
+            </li>
+          
+        
+          
+            <li>
+              <a class="" href="../responsive-images/"><span class="count"></span><span class="txt">Related Tips and Techniques: Responsive Images</span></a>
+              
+            </li>
+          
+        
+          
+            <li>
+              <a class="" href="../responsive-tables/"><span class="count"></span><span class="txt">Related Tips and Techniques: Responsive Data Tables</span></a>
+              
+            </li>
+          
+        
+          
+            <li>
+              <a class="" href="../upcoming/"><span class="count"></span><span class="txt">Upcoming</span></a>
+              
+            </li>
+          
+        
+      
+    </ul>
+    <h2 class="list-heading" id="list-heading-topics">
+  All Developer Intros
+</h2>
+<ul class="topics" aria-labelledby="list-heading-topics">
+  <li><span class="current-a"><span class="count"></span><span class="txt"><span class="visuallyhidden">Current: </span>Mobile <span class="status">editors-draft</span></span></span></li>
+</ul>
+
+  </nav>
+</div>
+  </div>
+	<footer id="footer" role="contentinfo" aria-labelledby="wai_footerheading">
+    <div>
+		<h2 id="wai_footerheading">Document Information</h2>
+    <p><strong>Feedback: We welcome ideas for improvements, bug reports, and comments</strong> via <a href="https://github.com/w3c/wai-tutorials">GitHub</a> or e-mail to <a href="mailto:wai-eo-editors@w3.org">wai-eo-editors@w3.org</a> (a publicly archived list) or <a href="mailto:wai@w3.org">wai@w3.org</a> (a WAI staff-only list).</p>
+		<ul>
+			<li><strong>Status:</strong>
+				
+	        [EDITOR’S DRAFT] updated
+	      
+	      15 June 2017
+	      
+			</li>
+      <li>
+  Editors:
+  <ul class="inline">
+    <li>Kim Patch</li><li>Kathy Wahlbin</li><li>Judy Brewer</li>
+  </ul>
+
+  Contributors:
+  <ul class="inline">
+    <li>The Education and Outreach Working Group (<a href="https://www.w3.org/WAI/EO/">EOWG</a>)</li>
+  </ul>
+</li>
+
+<li>
+  Developed with support from the <a href="https://www.w3.org/WAI/WCAGTA/">U.S. Access Board, WCAG TA Project</a>
+</li>
+
+      <li>[<a class="" href="../../attributions/"><span class="count"></span><span class="txt">Attributions</span></a>]  [<a class="" href="../../changelog/"><span class="count"></span><span class="txt">Changelog</span></a>]</li>
+    </ul>
+    <p>
+    	[<a href="https://www.w3.org/WAI/sitemap.html">WAI Site Map</a>]
+    	[<a href="https://www.w3.org/WAI/sitehelp.html">Help with WAI Website</a>]
+    	[<a href="https://www.w3.org/WAI/search.php">Search</a>]
+    	[<a href="https://www.w3.org/WAI/contacts">Contacting WAI</a>]
+		</p>
+    <div class="copyright">
+        <p>
+	        Copyright &#xA9; 2017 W3C <sup>&#xAE;</sup> (<a href="http://www.csail.mit.edu/"><abbr title="Massachusetts Institute of Technology">MIT</abbr></a>, <a href="http://www.ercim.eu/"><abbr title="European Research Consortium for Informatics and Mathematics">ERCIM</abbr></a>, <a href="http://www.keio.ac.jp/">Keio</a>, <a href="http://ev.buaa.edu.cn/">Beihang</a>) <a href="/Consortium/Legal/ipr-notice">Usage policies apply</a>.
+        </p>
+      </div><!-- ends copyright -->
+    </div>
+	</footer>
+	<script src="../../javascripts/main-7b42be13.js" type="text/javascript"></script>
+  <!-- Piwik -->
+  <script type="text/javascript">
+  var _paq = _paq || [];
+  _paq.push(["setDomains", ["*.www.w3.org/WAI"]]);
+  _paq.push(['trackPageView']);
+  _paq.push(['enableLinkTracking']);
+  (function() {
+  var u="//www.w3.org/analytics/piwik/";
+  _paq.push(['setTrackerUrl', u+'piwik.php']);
+  _paq.push(['setSiteId', 328]);
+  var d=document, g=d.createElement('script'),
+  s=d.getElementsByTagName('script')[0];
+  g.type='text/javascript'; g.async=true; g.defer=true; g.src=u+'piwik.js';
+  s.parentNode.insertBefore(g,s);
+  })();
+  </script>
+  <noscript><p><img src="//www.w3.org/analytics/piwik/piwik.php?idsite=328"
+  style="border:0;" alt="" /></p></noscript>
+  <!-- End Piwik Code -->
+	</body>
+</html>

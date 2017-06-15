@@ -1,0 +1,411 @@
+<!doctype html>
+<html class="no-js no-svg" lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>
+  WAI Guidance and Techniques for Mobile Accessibility
+  
+    
+       &bull; Mobile
+    
+  
+  &bull; WAI Web Accessibility Tutorials
+  </title>
+  <link rel="canonical" href="https://www.w3.org/WAI/tutorials/mobile/wai-guidance/" />
+  <meta name="viewport" content="width=device-width">
+  <link href="../../stylesheets/wai-act-51575202.css" rel="stylesheet" type="text/css" />
+  <script src="../../javascripts/modernizr-a1c597b5.js" type="text/javascript"></script>
+  <link rel="mask-icon" href="../../img/w3cwai-maskicon-cf2cdf03.svg" color="#003366">
+</head>
+<body class="texts">
+  <header role="banner">
+    <div class="w3c-wai-header">
+      <a href="http://w3.org/"><img alt="W3C" width="90" src="../../img/w3c-bde9a11f.svg" /></a>
+      <a href="http://w3.org/WAI/" class="wai"><img alt="Web Accessibility Initiative" src="../../img/wai-590850fc.svg" /></a>
+    </div>
+    <div class="page-title">
+      <a class="" href="../../">Web Accessibility Developer Intros <span class="subheading">Guidance on how to create websites that meet WCAG</span></a>
+    </div>
+  </header>
+  <div class="with-side-menu">
+    <nav aria-label="Skip links" role="navigation">
+      <a href="#nav" class="btn btn-jump">Jump to the navigation</a>
+    </nav>
+<main role="main" class="content editors-draft">
+  <article role="article">
+    <header class="tutorial-heading">
+      <nav class="breadcrumb" aria-label="Breadcrumbs" role="navigation">
+        <p>
+          <span class="home"><a class="" href="../../"><span class="count"></span><span class="txt">Developer Intro home</span></a></span> <span class="icon icon-chevron-right"></span><span class="visuallyhidden">»</span>
+          <span class="other">
+            
+              <a class="" href="../"><span class="count"></span><span class="txt">Mobile</span></a> <span class="icon icon-chevron-right"></span><span class="visuallyhidden">»</span>
+            
+            
+            <span class="current-a"><span class="count"></span><span class="txt"><span class="visuallyhidden">Current: </span>WAI Guidance and Techniques for Mobile Accessibility</span></span>
+          </span>
+        </p>
+      </nav>
+      <h1>
+        WAI Guidance and Techniques for Mobile Accessibility
+      </h1>
+    </header>
+
+    
+    
+      <div class="status">
+        <p><strong>Status:</strong> This is not ready for detailed review. It is an in-progress, unapproved editor’s draft.</p>
+      </div>
+    
+
+
+    <div class="inner">
+
+      
+
+      
+
+
+      <h2 id="wcag-20">WCAG 2.0</h2>
+
+<p>Many <a href="https://www.w3.org/TR/WCAG20/">WCAG 2.0</a> techniques apply to web and non-web mobile content and applications.</p>
+
+<p><em>[[[Note from Kim: I wanted to put the customizable quick reference here with advice to click the mobile tag, but there is no mobile tag. This might be good to keep in mind for future version of the customizable quick reference.]]]</em></p>
+
+<p><a href="https://www.w3.org/TR/mobile-accessibility-mapping/">Mobile Accessibility: How WCAG 2.0 and Other W3C/WAI Guidelines Apply to Mobile</a> maps out in detail how many of the W3C/WAI Guidelines apply to mobile.</p>
+
+<h2 id="uaag-20-guidelines">UAAG 2.0 Guidelines</h2>
+
+<p>The <a href="https://www.w3.org/TR/2015/NOTE-UAAG20-Reference-20151215/">UAAG 2.0</a> guidelines apply to mobile.</p>
+
+<p>Many of the guidelines include <a href="https://www.w3.org/TR/IMPLEMENTING-UAAG20/mobile.html">mobile examples</a></p>
+
+<h2 id="w3c-tutorials">W3C Tutorials</h2>
+
+<p>The W3C <a href="https://www.w3.org/WAI/tutorials/">Tutorials</a> for Page Structure, Menus, Images, Tables, Forms and Carousels menus all apply to mobile.</p>
+
+<h2 id="issues-to-bear-in-mind-when-using-general-accessibility-resources-for-mobile">Issues to bear in mind when using general accessibility resources for mobile</h2>
+
+<p>Mobile devices are used differently because they have small screens, are very portable, and the primary means of input is often touch.</p>
+
+<h3 id="limited-screen-size">1. Limited screen size</h3>
+<p>Although mobile devices have exceptional resolution, small screen sizes limit how much information can be viewed at once, especially for people who use magnification.</p>
+
+<p>Tips:</p>
+
+<ul>
+  <li>Provide clear information architecture and navigation</li>
+  <li>Minimize distractions</li>
+  <li>Provide perceptible feedback</li>
+  <li>Use responsive design that uses CSS stylesheets to adjust layout depending on screen width</li>
+  <li>Make sure text reflows to avoid horizontal scrolling</li>
+  <li>Provide a reasonable default size for content and touch controls</li>
+  <li>Adapt the length of link text to screen width</li>
+  <li>In portrait layout, position form fields below rather than beside labels</li>
+</ul>
+
+<p>Details:</p>
+
+<ul>
+  <li><a href="https://www.w3.org/TR/mobile-accessibility-mapping/#small-screen-size">Small screen size</a></li>
+</ul>
+
+<h3 id="touch-and-gestural-input">2. Touch and gestural input</h3>
+
+<p>The exceptional resolution of mobile screen devices means that interactive elements can be shown in a small space. But these elements must be accessible by touch.</p>
+
+<p>Tips:</p>
+
+<ul>
+  <li>Make touch targets large enough to be accessible by touch (without magnification)</li>
+  <li>Make touch targets look clickable/touchable</li>
+  <li>Use inactive space to separate touch targets that are close together</li>
+  <li>Position and group touch targets so they are easy to reach on a mobile device</li>
+  <li>Focus target on touch, activate target on release (mouseup or touchend)</li>
+  <li>Make gestures easy to carry out</li>
+</ul>
+
+<p>Details:</p>
+
+<ul>
+  <li><a href="https://www.w3.org/TR/mobile-accessibility-mapping/#touch-target-size-and-spacing">Touch target size and spacing</a></li>
+  <li><a href="https://www.w3.org/TR/mobile-accessibility-mapping/#touchscreen-gestures">Touchscreen gestures</a></li>
+  <li><a href="https://www.w3.org/TR/mobile-accessibility-mapping/#placing-buttons-where-they-are-easy-to-access">Placing Buttons where they are easy to access</a></li>
+  <li><a href="https://www.w3.org/TR/mobile-accessibility-mapping/#provide-clear-indication-that-elements-are-actionable">Provide clear indication that elements are actionable</a></li>
+</ul>
+
+<h3 id="keyboards-and-virtual-keyboards">3. Keyboards and virtual keyboards</h3>
+
+<p>Although the primary means of input for mobile devices is touch, mobile devices also include on-screen keyboards and can connect to external input devices including  keyboards. Some users rely on keyboard input.</p>
+
+<p>Tips:</p>
+
+<ul>
+  <li>Support keyboard input as an alternative to touch</li>
+</ul>
+
+<p>Details:</p>
+
+<ul>
+  <li><a href="https://www.w3.org/TR/mobile-accessibility-mapping/#keyboard-control-for-touchscreen-devices">Keyboard control for touchscreen devices</a></li>
+</ul>
+
+<h3 id="speech">4. Speech</h3>
+
+<p>Mobile devices commonly support speech input via a speech button on the keyboard and intelligent agents like Siri. Some users rely on speech input.</p>
+
+<p>Tips:</p>
+
+<ul>
+  <li>Support speech input as an alternative to touch</li>
+  <li>If you offer keyboard users single character shortcuts, make sure users can turn off or remap these shortcuts so they can avoid accidentally activating many shortcuts at once with spoken words</li>
+</ul>
+
+<h3 id="device-sensors">5. Device sensors</h3>
+
+<p>Mobile devices commonly support control options triggered by device manipulation gestures.  Some users cannot carry out these gestures.</p>
+
+<p>Tips:</p>
+
+<ul>
+  <li>Provide touch and keyboard operable alternative control options for device manipulation gestures</li>
+</ul>
+
+<p>Details:</p>
+
+<ul>
+  <li><a href="https://www.w3.org/TR/mobile-accessibility-mapping/#device-manipulation-gestures">Device manipulation gestures</a></li>
+</ul>
+
+<h3 id="layout-and-screen-orientation">6. Layout and screen orientation</h3>
+
+<p>Most sites today use responsive design to adjust layout based on screen size. People using mobile devices must scroll more. People with low vision who use magnification may be seeing the mobile version on the desktop. Some users may not able to easily change orientation.</p>
+
+<p>Tips:</p>
+
+<ul>
+  <li>Don’t assume that a given screen width is only for a particular device. Make sure all functions are available four screens of all sizes, and make sure that layout is relatively consistent in all sizes and for both portrait and landscape mode.</li>
+  <li>Position important elements in the first part of the page to limit excessive scrolling</li>
+  <li>Warn users when moving between portrait and landscape mode</li>
+</ul>
+
+<p>Details:</p>
+
+<ul>
+  <li><a href="https://www.w3.org/TR/mobile-accessibility-mapping/#consistent-layout">consistent-layout</a></li>
+  <li><a href="https://www.w3.org/TR/mobile-accessibility-mapping/#positioning-important-page-elements-before-the-page-scroll">Positioning important page elements before the page scroll</a></li>
+  <li><a href="https://www.w3.org/TR/mobile-accessibility-mapping/#changing-screen-orientation-portrait-landscape">Changing screen orientation portrait landscape</a></li>
+</ul>
+
+<h3 id="platform-accessibility-conventions">7. Platform accessibility conventions</h3>
+
+<p>Mobile devices include accessibility features like zoom, large fonts, and captions. It’s important that a website not interfere with the operation of this platform-wide assistive technology</p>
+
+<p>Tips:</p>
+
+<ul>
+  <li>Honor platform accessibility settings including zoom, fonts and captions</li>
+</ul>
+
+<p>Details</p>
+
+<ul>
+  <li><a href="https://www.w3.org/TR/mobile-accessibility-mapping/#support-the-characteristic-properties-of-the-platform">Support the characteristic properties of the platform</a></li>
+</ul>
+
+
+
+
+      
+
+      <nav role="navigation" aria-label="Previous/Next" id="tools">
+  <ul>
+    
+      
+        <li class="prev">
+          <span><a rel="prev" class="" href="../"><span class="count"></span><span class="txt"><span class="dir">Previous:</span><span class="title">Mobile Concepts</span></span></a></span>
+        </li>
+      
+      
+        
+        
+        
+      
+        
+        
+        
+          <li class="next">
+            <span><a rel="next" class="" href="../form-labels/"><span class="count"></span><span class="txt"><span class="dir">Next:</span><span class="title">Related Tips and Techniques: Mobile Form Labels</span></span></a></span>
+          </li>
+        
+      
+        
+        
+        
+      
+        
+        
+        
+      
+        
+        
+        
+      
+        
+        
+        
+      
+    
+  </ul>
+</nav>
+
+
+      <aside class="side-box github" role="complementary">
+  <h2 class="heading">We welcome your ideas</h2>
+  <p>Please send any ideas, suggestions, or comments to the <a href="mailto:wai-eo-editors@w3.org?subject=[Tutorial%20Feedback]">(publicly-archived) mailing list wai-eo-editors@w3.org</a>. You can also contribute to the <a href="https://github.com/w3c/wai-media-intro" rel="nofollow">code directly on Github</a>.</p>
+
+	<div class="editpage">
+  	<a class="btn" href="https://github.com/w3c/wai-media-intro/blob/master/source/mobile/wai-guidance.html.erb.md">Fork &amp; edit this page on Github</a>
+	</div>
+
+</aside>
+
+
+    </div>
+  </article>
+</main>
+<div class="navigation">
+  <nav role="navigation" aria-label="Main" id="nav">
+    <h2 class="list-heading" id="list-heading-tutorials">
+      
+          Mobile Tutorial
+      
+    </h2>
+    <ul aria-labelledby="list-heading-tutorials">
+      
+        
+      
+      
+        
+          <li class="intro"><a class="" href="../"><span class="count"></span><span class="txt">Concepts</span></a></li>
+        
+        
+          
+            <li>
+              <span class="current-a"><span class="count"></span><span class="txt"><span class="visuallyhidden">Current: </span>WAI Guidance</span></span>
+              
+            </li>
+          
+        
+          
+            <li>
+              <a class="" href="../form-labels/"><span class="count"></span><span class="txt">Related Tips and Techniques: Mobile Form Labels</span></a>
+              
+            </li>
+          
+        
+          
+            <li>
+              <a class="" href="../mobile-menus/"><span class="count"></span><span class="txt">Related Tips and Techniques: Mobile Menus</span></a>
+              
+            </li>
+          
+        
+          
+            <li>
+              <a class="" href="../responsive-images/"><span class="count"></span><span class="txt">Related Tips and Techniques: Responsive Images</span></a>
+              
+            </li>
+          
+        
+          
+            <li>
+              <a class="" href="../responsive-tables/"><span class="count"></span><span class="txt">Related Tips and Techniques: Responsive Data Tables</span></a>
+              
+            </li>
+          
+        
+          
+            <li>
+              <a class="" href="../upcoming/"><span class="count"></span><span class="txt">Upcoming</span></a>
+              
+            </li>
+          
+        
+      
+    </ul>
+    <h2 class="list-heading" id="list-heading-topics">
+  All Developer Intros
+</h2>
+<ul class="topics" aria-labelledby="list-heading-topics">
+  <li><span class="current-a"><span class="count"></span><span class="txt"><span class="visuallyhidden">Current: </span>Mobile <span class="status">editors-draft</span></span></span></li>
+</ul>
+
+  </nav>
+</div>
+  </div>
+	<footer id="footer" role="contentinfo" aria-labelledby="wai_footerheading">
+    <div>
+		<h2 id="wai_footerheading">Document Information</h2>
+    <p><strong>Feedback: We welcome ideas for improvements, bug reports, and comments</strong> via <a href="https://github.com/w3c/wai-tutorials">GitHub</a> or e-mail to <a href="mailto:wai-eo-editors@w3.org">wai-eo-editors@w3.org</a> (a publicly archived list) or <a href="mailto:wai@w3.org">wai@w3.org</a> (a WAI staff-only list).</p>
+		<ul>
+			<li><strong>Status:</strong>
+				
+	        [EDITOR’S DRAFT] updated
+	      
+	      15 June 2017
+	      
+			</li>
+      <li>
+  Editors:
+  <ul class="inline">
+    <li>Kim Patch</li><li>Kathy Wahlbin</li><li>Judy Brewer</li>
+  </ul>
+
+  Contributors:
+  <ul class="inline">
+    <li>The Education and Outreach Working Group (<a href="https://www.w3.org/WAI/EO/">EOWG</a>)</li>
+  </ul>
+</li>
+
+<li>
+  Developed with support from the <a href="https://www.w3.org/WAI/WCAGTA/">U.S. Access Board, WCAG TA Project</a>
+</li>
+
+      <li>[<a class="" href="../../attributions/"><span class="count"></span><span class="txt">Attributions</span></a>]  [<a class="" href="../../changelog/"><span class="count"></span><span class="txt">Changelog</span></a>]</li>
+    </ul>
+    <p>
+    	[<a href="https://www.w3.org/WAI/sitemap.html">WAI Site Map</a>]
+    	[<a href="https://www.w3.org/WAI/sitehelp.html">Help with WAI Website</a>]
+    	[<a href="https://www.w3.org/WAI/search.php">Search</a>]
+    	[<a href="https://www.w3.org/WAI/contacts">Contacting WAI</a>]
+		</p>
+    <div class="copyright">
+        <p>
+	        Copyright &#xA9; 2017 W3C <sup>&#xAE;</sup> (<a href="http://www.csail.mit.edu/"><abbr title="Massachusetts Institute of Technology">MIT</abbr></a>, <a href="http://www.ercim.eu/"><abbr title="European Research Consortium for Informatics and Mathematics">ERCIM</abbr></a>, <a href="http://www.keio.ac.jp/">Keio</a>, <a href="http://ev.buaa.edu.cn/">Beihang</a>) <a href="/Consortium/Legal/ipr-notice">Usage policies apply</a>.
+        </p>
+      </div><!-- ends copyright -->
+    </div>
+	</footer>
+	<script src="../../javascripts/main-7b42be13.js" type="text/javascript"></script>
+  <!-- Piwik -->
+  <script type="text/javascript">
+  var _paq = _paq || [];
+  _paq.push(["setDomains", ["*.www.w3.org/WAI"]]);
+  _paq.push(['trackPageView']);
+  _paq.push(['enableLinkTracking']);
+  (function() {
+  var u="//www.w3.org/analytics/piwik/";
+  _paq.push(['setTrackerUrl', u+'piwik.php']);
+  _paq.push(['setSiteId', 328]);
+  var d=document, g=d.createElement('script'),
+  s=d.getElementsByTagName('script')[0];
+  g.type='text/javascript'; g.async=true; g.defer=true; g.src=u+'piwik.js';
+  s.parentNode.insertBefore(g,s);
+  })();
+  </script>
+  <noscript><p><img src="//www.w3.org/analytics/piwik/piwik.php?idsite=328"
+  style="border:0;" alt="" /></p></noscript>
+  <!-- End Piwik Code -->
+	</body>
+</html>
