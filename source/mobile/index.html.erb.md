@@ -55,6 +55,7 @@ The developing mobile market has fostered a rich environment of customization. M
 Mobile devices started out as fairly distinct from desktop and laptop computers, but over time the categories have blurred. Today, there’s no absolute divide between desktop/laptop and mobile.
 
 ##Merging input methods
+
 After the advent of the mobile touchscreen, mobile users controlled devices using touch, and controlled the desktop using keyboard and mouse. But over time some laptops and desktop screens have gained touchscreen gesture control, while mobile devices can increasingly be connected to an external keyboard and mouse.
 
 Early mobile devices didn’t include speech input for dictation or for control, while speech input for dictation and control has been an option on the desktop for decades. But many of today’s mobile devices allow the user to dictate and have pioneered intelligent agents that can be summoned by speech. Meanwhile, the intelligent agents have migrated to the desktop.
@@ -67,6 +68,7 @@ The vast majority of user interface elements for desktops, such as hyperlinks, t
 Also, although mobile and desktop operating systems are distinct, some laptops are using mobile operating systems.
 
 ##Mobile is part of a continuum
+
 So there’s really no such thing as developing for mobile-only or desktop-only. There’s a continuum from desktop to mobile into native applications. Mobile development spans web content, browser apps, native apps, and hybrid apps that range from web apps wrapped with native packaging to native apps that contain some HTML/CSS.
 
 At the same time, the new capabilities of mobile devices are driving changes on the desktop, including the touch interface, intelligent agents, and better support for smaller windows.
@@ -96,7 +98,7 @@ The following personas show how people with a variety of accessibility needs use
 
 ### Joe
 
-Joe has hand tremors from Parkinsons.
+![](mobile-persona-joe.jpg){:.symbol} Joe has hand tremors from Parkinsons.
 
 - Touching small areas of the screen is difficult for Joe
 - He often accidentally activates a control when controls are close together
@@ -110,7 +112,7 @@ Potential solutions:
 
 ### Rebecca
 
-Rebecca uses an external keyboard with her Android tablet and the onscreen keyboard on her Android phone.
+![](mobile-persona-rebecca.jpg){:.symbol} Rebecca uses an external keyboard with her Android tablet and the onscreen keyboard on her Android phone.
 
 - Rebecca often uses touch, speech and keyboard to access content
 - She prefers the standard onscreen keyboard to update based on the type of data that needs to be entered
@@ -122,7 +124,7 @@ Potential solution:
 
 ### Mark
 
-Mark has light sensitivity and 20/200 vision.
+![](mobile-persona-mark.jpg){:.symbol} Mark has light sensitivity and 20/200 vision.
 
 - Mark has a hard time seeing the screen – especially outside where there is a lot of glare
 - His device is set to large fonts and increased contrast
@@ -134,7 +136,7 @@ Potential solution:
 
 ### Shawn
 
-Shawn uses a wheelchair and a head wand.
+![](mobile-persona-shawn.jpg){:.symbol} Shawn uses a wheelchair and a head wand.
 
 - Shawn’s iPad is bolted onto the side of his wheelchair in landscape orientation and he sets his device to remain in landscape orientation
 
@@ -145,7 +147,7 @@ Potential solution:
 
 ### Joyce
 
-Joyce has repetitive strain injuries in her hands.
+![](mobile-persona-joyce.jpg){:.symbol} Joyce has repetitive strain injuries in her hands.
 
 - Using the touch interface can be painful
 - She uses the speech button on her smart phone to dictate texts and email and her smart phone’s intelligent agent to launch apps and search the web (e.g. “Launch Editorial”, “Search the web for green apples”)
@@ -158,7 +160,7 @@ Potential solutions:
 
 ### Gabi
 
-Gabi uses a screen reader with touch, and uses dictation and Siri to more quickly enter content and perform functions.
+![](mobile-persona-gabi.jpg){:.symbol} Gabi uses a screen reader with touch, and uses dictation and Siri to more quickly enter content and perform functions.
 
 - Gabi prefers to access content on her iPhone so it’s important that her different means of input: touch, gestures and speech – work with the screen reader
 - She faces challenges with inaccessible content similar to the desktop
@@ -169,7 +171,6 @@ Potential solution:
 - Many WCAG techniques apply mobile
 
 For more details on personas see [stories of web users](https://www.w3.org/WAI/intro/people-use-web/stories)
-
 
 
 ## Related Mobile Accessibility Resources

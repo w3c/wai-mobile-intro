@@ -59,9 +59,11 @@ A similar approach is to use a single <img> element, but use the srcset attribut
 <%= code_end %>
 {:/nomarkdown}
 
+Figure 1: Dragon 320.jpg<br>
+![](mobile-dragon-small.jpg)
 
-Figure 1: Dragon 320.jpg
+Figure 2: Dragon 640.jpg<br>
+![](mobile-dragon-medium.jpg)
 
-Figure 2: Dragon 640.jpg
-
-Figure 3: Dragon 1024.jpg
+Figure 3: Dragon 1024.jpg<br>
+![](mobile-dragon-large.jpg)
